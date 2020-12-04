@@ -1,22 +1,28 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
+import React, { useRef } from "react"
 import SEO from "../components/seo"
+import Background from "../home/animated-bg"
+import Hero from "../home/hero"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+const IndexPage = () => {
+  const iconRefs = useRef([])
+  const navRefs = useRef([])
+  const profileRefs = useRef(null)
+  const contentRefs = useRef(null)
+  const bgRefs = useRef(null)
+
+  return (
+    <div className="w-full h-screen relative">
+      <SEO title="Home" />
+      <Background />
+      <Hero
+        bgRefs={bgRefs}
+        contentRefs={contentRefs}
+        profileRefs={profileRefs}
+        navRefs={navRefs}
+        iconRefs={iconRefs}
+      />
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+  )
+}
 
 export default IndexPage

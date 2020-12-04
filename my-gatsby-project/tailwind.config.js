@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors")
+
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -5,7 +7,18 @@ module.exports = {
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        green: colors.teal,
+      },
+    },
+    zIndex: {
+      "-1": -1,
+    },
+    fontFamily: {
+      Overlock: ["Overlock", "sans-serif"],
+      Mada: ["Mada", "serif"], // Ensure fonts with spaces have " " surrounding it.
+    },
   },
   variants: {},
   plugins: [],
