@@ -102,10 +102,10 @@ const Hero = ({ bgRefs, contentRefs, profileRefs, navRefs, iconRefs }) => {
             Hey, my name is <span className="text-green-300">Simon!</span> I am
             a Front End Developer living in Edmonton, Alberta.
           </h1>
-          <h3 className="font-Overlock text-center xl:text-left font-black  text-2xl sm:text-3xl lg:text-4xl 3xl:text-5xl">
+          <h2 className="font-Overlock text-center xl:text-left font-black  text-2xl sm:text-3xl lg:text-4xl 3xl:text-5xl">
             I currently work as a Web Developer at{" "}
             <span className="text-green-300">Beamdog.</span>
-          </h3>
+          </h2>
           <div className="flex sm:block flex-col justify-center sm:mt-20 mt-10 mb-10 mx-auto xl:mx-0">
             <button className="py-2 3xl:py-4 uppercase border-white font-Mada text-3xl md:text-4xl xl:text-3xl 3xl:text-5xl border-4 rounded-xl mx-auto my-2 sm:mr-8 w-44 sm:w-52 xl:w-44 3xl:w-64 swipe-hover">
               Projects
