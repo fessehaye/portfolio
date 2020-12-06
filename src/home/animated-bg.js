@@ -28,7 +28,7 @@ const AnimatedBG = () => {
         },
       }
     )
-  }, [])
+  }, [revealRefs])
 
   return (
     <svg
