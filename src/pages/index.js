@@ -1,8 +1,7 @@
 import React, { useRef } from "react"
 import SEO from "../components/seo"
 import loadable from "@loadable/component"
-import Background from "../home/animated-bg"
-
+const Background = loadable(() => import("../home/animated-bg"))
 const Hero = loadable(() => import("../home/hero"))
 
 const IndexPage = () => {

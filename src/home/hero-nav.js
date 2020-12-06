@@ -25,14 +25,14 @@ const HeroNav = ({ profileRefs, navRefs }) => {
   tl.fromTo(
     mobileRefs.current,
     {
-      duration: 0.7,
+      duration: 0.5,
       opacity: 0,
       display: "none",
       clipPath: "circle(0% at 100% 0%)",
       ease: "power3.out",
     },
     {
-      duration: 0.7,
+      duration: 0.5,
       opacity: 100,
       display: "flex",
       clipPath: "circle(200% at 100% 0%)",
