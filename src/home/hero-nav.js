@@ -27,12 +27,14 @@ const HeroNav = ({ profileRefs, navRefs }) => {
     {
       duration: 0.7,
       opacity: 0,
+      display: "none",
       clipPath: "circle(0% at 100% 0%)",
       ease: "power3.out",
     },
     {
       duration: 0.7,
       opacity: 100,
+      display: "flex",
       clipPath: "circle(200% at 100% 0%)",
       ease: "power3.out",
     }
@@ -75,14 +77,16 @@ const HeroNav = ({ profileRefs, navRefs }) => {
             Resume
           </span>
         </div>
-        <div className="sm:hidden flex ml-auto">
+        <div
+          className="sm:hidden flex ml-auto"
+          onClick={() => {
+            setToggle(true)
+          }}
+        >
           <svg
             className="w-16 h-16 sm:w-20 sm:h-20"
             fill="currentColor"
             viewBox="0 0 20 20"
-            onClick={() => {
-              setToggle(true)
-            }}
             ref={e => (navRefs.current[3] = e)}
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -96,7 +100,7 @@ const HeroNav = ({ profileRefs, navRefs }) => {
       </nav>
 
       <nav
-        className="absolute w-full min-h-screen inset-0 z-30 bg-green-500 flex flex-col items-center pt-28 opacity-0 sm:pointer-events-none"
+        className="absolute w-full min-h-screen inset-0 z-30 bg-green-500 hidden flex-col items-center pt-28 opacity-0"
         ref={mobileRefs}
       >
         <svg
