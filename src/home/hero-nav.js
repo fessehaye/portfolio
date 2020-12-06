@@ -77,16 +77,14 @@ const HeroNav = ({ profileRefs, navRefs }) => {
             Resume
           </span>
         </div>
-        <div
-          className="sm:hidden flex ml-auto"
-          onClick={() => {
-            setToggle(true)
-          }}
-        >
+        <div className="sm:hidden flex ml-auto">
           <svg
             className="w-16 h-16 sm:w-20 sm:h-20"
             fill="currentColor"
             viewBox="0 0 20 20"
+            onClick={() => {
+              setToggle(true)
+            }}
             ref={e => (navRefs.current[3] = e)}
             xmlns="http://www.w3.org/2000/svg"
           >
