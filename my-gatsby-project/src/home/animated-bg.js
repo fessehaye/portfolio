@@ -32,7 +32,7 @@ const AnimatedBG = () => {
 
   return (
     <svg
-      className="absolute w-full h-screen inset-0 z-0"
+      className="absolute w-full min-h-screen h-full inset-0 z-0"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1000 562.502"
       preserveAspectRatio="xMaxYMid slice"

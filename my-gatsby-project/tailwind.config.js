@@ -11,9 +11,10 @@ module.exports = {
       colors: {
         green: colors.teal,
       },
-    },
-    zIndex: {
-      "-1": -1,
+      screens: {
+        "3xl": "2100px",
+        // => @media (orientation: portrait) { ... }
+      },
     },
     fontFamily: {
       Overlock: ["Overlock", "sans-serif"],

@@ -11,7 +11,7 @@ const IndexPage = () => {
   const bgRefs = useRef(null)
 
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full min-h-screen xl:h-screen relative">
       <SEO title="Home" />
       <Background />
       <Hero

@@ -3,3 +3,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-link:hover:before {
+  transform: scaleX(1);
+}
+.hero-link:before {
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transform: scaleX(0);
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+.swipe-hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+}
+.swipe-hover:hover:before {
+  transform: translateX(0);
+}
+
+.swipe-hover {
+  transition: 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe-hover:hover {
+  color: #5a67d8;
+}
+
+.clip-transition {
+  clip-path: circle(0% at 100% 0%);
+}
