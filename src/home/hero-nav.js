@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useRef } from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import gsap from "gsap"
 
-const HeroNav = ({ profileRefs, navRefs }) => {
+const HeroNav = ({ profileRefs, navRefs, animateRedirect }) => {
   const data = useStaticQuery(graphql`
     query {
       profilePic: file(relativePath: { eq: "profile.jpg" }) {
@@ -73,6 +73,7 @@ const HeroNav = ({ profileRefs, navRefs }) => {
           </span>
           <span
             ref={e => (navRefs.current[2] = e)}
+            onClick={e => animateRedirect(e, "/resume/")}
             className="font-Mada font-bold mx-4 text-3xl 3xl:text-4xl hover:text-white transition hero-link cursor-pointer"
           >
             Resume
@@ -131,6 +132,7 @@ const HeroNav = ({ profileRefs, navRefs }) => {
           Projects
         </button>
         <button
+          onClick={e => animateRedirect(e, "/resume/")}
           className="font-Mada font-bold text-4xl bg-white rounded-lg text-green-500 py-4 w-5/6 m-4"
           ref={e => (mobileNavRefs.current[2] = e)}
         >

@@ -3,7 +3,14 @@ import gsap from "gsap"
 import HeroNav from "./hero-nav"
 import HeroFooter from "./hero-footer"
 
-const Hero = ({ bgRefs, contentRefs, profileRefs, navRefs, iconRefs }) => {
+const Hero = ({
+  bgRefs,
+  contentRefs,
+  profileRefs,
+  navRefs,
+  iconRefs,
+  animateRedirect,
+}) => {
   useEffect(() => {
     let tl = gsap.timeline({ paused: true })
     const mediaQuery = window.matchMedia("(min-width: 1280px)")
@@ -85,12 +92,16 @@ const Hero = ({ bgRefs, contentRefs, profileRefs, navRefs, iconRefs }) => {
       >
         <path
           d="M0 0H1488L1169.5 517.5L1488 1050H0V0Z"
-          fill="#5A67D8"
+          fill="#6366F1"
           fillOpacity="0.9"
         />
       </svg>
       <main className="w-full min-h-screen xl:h-screen relative flex flex-col z-20 text-white px-8 py-6">
-        <HeroNav profileRefs={profileRefs} navRefs={navRefs} />
+        <HeroNav
+          profileRefs={profileRefs}
+          navRefs={navRefs}
+          animateRedirect={animateRedirect}
+        />
 
         <div
           className="w-100 flex-1 flex flex-col justify-center xl:w-3/4 2xl:w-5/6"
@@ -108,9 +119,13 @@ const Hero = ({ bgRefs, contentRefs, profileRefs, navRefs, iconRefs }) => {
             <button className="py-2 3xl:py-4 uppercase border-white font-Mada text-3xl md:text-4xl xl:text-3xl 3xl:text-5xl border-4 rounded-xl mx-auto my-2 sm:mr-8 w-44 sm:w-52 xl:w-44 3xl:w-64 swipe-hover">
               Projects
             </button>
-            <button className="py-2 3xl:py-4 uppercase border-white font-Mada text-3xl md:text-4xl xl:text-3xl 3xl:text-5xl border-4 rounded-xl mx-auto my-2 sm:mr-0 w-44 sm:w-52 xl:w-44 3xl:w-64 swipe-hover">
+            <a
+              href="/resume/"
+              onClick={e => animateRedirect(e, "/resume/")}
+              className="py-2 cursor-pointer items-start inline-block text-center 3xl:py-4 uppercase border-white font-Mada text-3xl md:text-4xl xl:text-3xl 3xl:text-5xl border-4 rounded-xl mx-auto my-2 sm:mr-0 w-44 sm:w-52 xl:w-44 3xl:w-64 swipe-hover"
+            >
               Resume
-            </button>
+            </a>
           </div>
         </div>
 

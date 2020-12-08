@@ -1,34 +1,13 @@
-import React, { useEffect, useRef } from "react"
-import gsap from "gsap"
+import React, { useEffect } from "react"
 
-const AnimatedBG = () => {
-  const revealRefs = useRef([])
+// @refresh reset
 
+const AnimatedBG = ({ revealRefs, bgAdmin, pause }) => {
   useEffect(() => {
-    gsap.fromTo(
-      revealRefs.current,
-      {
-        opacity: 0,
-        scale: 0.1,
-        transformOrigin: "center",
-      },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 5,
-        transformOrigin: "center",
-        ease: "slow(0.7, 0.7, false)",
-        stagger: {
-          grid: "auto",
-          from: "random",
-          amount: 10,
-          repeat: -1,
-          yoyo: true,
-          ease: "power3.inOut",
-        },
-      }
-    )
-  }, [revealRefs])
+    if (!pause) {
+      bgAdmin()
+    }
+  }, [bgAdmin, pause])
 
   return (
     <svg
@@ -38,8 +17,6 @@ const AnimatedBG = () => {
       preserveAspectRatio="xMaxYMid slice"
     >
       <g transform="scale(.71203)">
-        <path fill="#fff" d="M0 0h1404.444v790H0z" />
-        <path fill="#fff" d="M0 0h87.778v87.778H0z" />
         <circle
           cx="21.945"
           cy="21.945"
@@ -75,7 +52,6 @@ const AnimatedBG = () => {
           fill="#f2f4fd"
           ref={e => (revealRefs.current[4] = e)}
         />
-        <path fill="#fff" d="M175.556 0h87.778v87.778h-87.778z" />
         <circle
           cx="197.505"
           cy="21.945"
@@ -104,7 +80,6 @@ const AnimatedBG = () => {
           fill="#f4f6fd"
           ref={e => (revealRefs.current[8] = e)}
         />
-        <path fill="#fff" d="M263.333 0h87.778v87.778h-87.778z" />
         <circle
           cx="285.275"
           cy="21.945"
@@ -133,7 +108,6 @@ const AnimatedBG = () => {
           fill="#e7ebfc"
           ref={e => (revealRefs.current[12] = e)}
         />
-        <path fill="#fff" d="M351.111 0h87.778v87.778h-87.778z" />
         <circle
           cx="373.055"
           cy="21.945"
@@ -162,7 +136,6 @@ const AnimatedBG = () => {
           fill="#687fea"
           ref={e => (revealRefs.current[16] = e)}
         />
-        <path fill="#fff" d="M438.889 0h87.778v87.778h-87.778z" />
         <circle
           cx="460.835"
           cy="21.945"
@@ -191,7 +164,6 @@ const AnimatedBG = () => {
           fill="#fff"
           ref={e => (revealRefs.current[20] = e)}
         />
-        <path fill="#fff" d="M526.667 0h87.778v87.778h-87.778z" />
         <circle
           cx="548.615"
           cy="21.945"
@@ -234,7 +206,6 @@ const AnimatedBG = () => {
           fill="#c8d0f7"
           ref={e => (revealRefs.current[26] = e)}
         />
-        <path fill="#fff" d="M877.778 0h87.778v87.778h-87.778z" />
         <circle
           cx="899.725"
           cy="21.945"
@@ -263,7 +234,6 @@ const AnimatedBG = () => {
           fill="#a3b1f2"
           ref={e => (revealRefs.current[30] = e)}
         />
-        <path fill="#fff" d="M965.556 0h87.778v87.778h-87.778z" />
         <circle
           cx="987.505"
           cy="21.945"
@@ -320,7 +290,6 @@ const AnimatedBG = () => {
           fill="#8fa1f0"
           ref={e => (revealRefs.current[38] = e)}
         />
-        <path fill="#fff" d="M0 87.778h87.778v87.778H0z" />
         <circle
           cx="21.945"
           cy="109.725"
@@ -349,7 +318,6 @@ const AnimatedBG = () => {
           fill="#7187ec"
           ref={e => (revealRefs.current[42] = e)}
         />
-        <path fill="#fff" d="M87.778 87.778h87.778v87.778H87.778z" />
         <circle
           cx="109.725"
           cy="109.725"
@@ -385,7 +353,6 @@ const AnimatedBG = () => {
           fill="#94a5f0"
           ref={e => (revealRefs.current[47] = e)}
         />
-        <path fill="#fff" d="M263.333 87.778h87.778v87.778h-87.778z" />
         <circle
           cx="285.275"
           cy="109.725"
@@ -421,7 +388,6 @@ const AnimatedBG = () => {
           fill="#788eed"
           ref={e => (revealRefs.current[52] = e)}
         />
-        <path fill="#fff" d="M438.889 87.778h87.778v87.778h-87.778z" />
         <circle
           cx="460.835"
           cy="109.725"
@@ -464,7 +430,6 @@ const AnimatedBG = () => {
           fill="#cfd7f8"
           ref={e => (revealRefs.current[58] = e)}
         />
-        <path fill="#fff" d="M702.222 87.778H790v87.778h-87.778z" />
         <circle
           cx="724.165"
           cy="109.725"
@@ -493,7 +458,6 @@ const AnimatedBG = () => {
           fill="#889bef"
           ref={e => (revealRefs.current[62] = e)}
         />
-        <path fill="#fff" d="M790 87.778h87.778v87.778H790z" />
         <circle
           cx="811.945"
           cy="109.725"
@@ -522,7 +486,6 @@ const AnimatedBG = () => {
           fill="#6a82eb"
           ref={e => (revealRefs.current[66] = e)}
         />
-        <path fill="#fff" d="M877.778 87.778h87.778v87.778h-87.778z" />
         <circle
           cx="899.725"
           cy="109.725"
@@ -551,7 +514,6 @@ const AnimatedBG = () => {
           fill="#a2b1f2"
           ref={e => (revealRefs.current[70] = e)}
         />
-        <path fill="#fff" d="M965.556 87.778h87.778v87.778h-87.778z" />
         <circle
           cx="987.505"
           cy="109.725"
@@ -587,7 +549,6 @@ const AnimatedBG = () => {
           fill="#e7ebfc"
           ref={e => (revealRefs.current[75] = e)}
         />
-        <path fill="#fff" d="M1141.111 87.778h87.778v87.778h-87.778z" />
         <circle
           cx="1163.055"
           cy="109.725"
@@ -616,7 +577,6 @@ const AnimatedBG = () => {
           fill="#ebeffc"
           ref={e => (revealRefs.current[79] = e)}
         />
-        <path fill="#fff" d="M1228.889 87.778h87.778v87.778h-87.778z" />
         <circle
           cx="1250.835"
           cy="109.725"
@@ -645,7 +605,6 @@ const AnimatedBG = () => {
           fill="#fbfbfe"
           ref={e => (revealRefs.current[83] = e)}
         />
-        <path fill="#fff" d="M1316.667 87.778h87.778v87.778h-87.778z" />
         <circle
           cx="1338.615"
           cy="109.725"
@@ -674,7 +633,6 @@ const AnimatedBG = () => {
           fill="#e5e9fb"
           ref={e => (revealRefs.current[87] = e)}
         />
-        <path fill="#fff" d="M0 175.556h87.778v87.778H0z" />
         <circle
           cx="21.945"
           cy="197.505"
@@ -703,7 +661,6 @@ const AnimatedBG = () => {
           fill="#9eadf2"
           ref={e => (revealRefs.current[91] = e)}
         />
-        <path fill="#fff" d="M87.778 175.556h87.778v87.778H87.778z" />
         <circle
           cx="109.725"
           cy="197.505"
@@ -753,7 +710,6 @@ const AnimatedBG = () => {
           fill="#b3bff5"
           ref={e => (revealRefs.current[98] = e)}
         />
-        <path fill="#fff" d="M438.889 175.556h87.778v87.778h-87.778z" />
         <circle
           cx="460.835"
           cy="197.505"
@@ -789,7 +745,6 @@ const AnimatedBG = () => {
           fill="#dbe1fa"
           ref={e => (revealRefs.current[103] = e)}
         />
-        <path fill="#fff" d="M614.444 175.556h87.778v87.778h-87.778z" />
         <circle
           cx="636.385"
           cy="197.505"
@@ -818,7 +773,6 @@ const AnimatedBG = () => {
           fill="#eceffc"
           ref={e => (revealRefs.current[107] = e)}
         />
-        <path fill="#fff" d="M702.222 175.556H790v87.778h-87.778z" />
         <circle
           cx="724.165"
           cy="197.505"
@@ -847,7 +801,6 @@ const AnimatedBG = () => {
           fill="#d6ddf9"
           ref={e => (revealRefs.current[111] = e)}
         />
-        <path fill="#fff" d="M790 175.556h87.778v87.778H790z" />
         <circle
           cx="811.945"
           cy="197.505"
@@ -876,7 +829,6 @@ const AnimatedBG = () => {
           fill="#c0caf6"
           ref={e => (revealRefs.current[115] = e)}
         />
-        <path fill="#fff" d="M877.778 175.556h87.778v87.778h-87.778z" />
         <circle
           cx="899.725"
           cy="197.505"
@@ -905,7 +857,6 @@ const AnimatedBG = () => {
           fill="#a0aff2"
           ref={e => (revealRefs.current[119] = e)}
         />
-        <path fill="#fff" d="M965.556 175.556h87.778v87.778h-87.778z" />
         <circle
           cx="987.505"
           cy="197.505"
@@ -934,7 +885,6 @@ const AnimatedBG = () => {
           fill="#aebaf4"
           ref={e => (revealRefs.current[123] = e)}
         />
-        <path fill="#fff" d="M1053.333 175.556h87.778v87.778h-87.778z" />
         <circle
           cx="1075.275"
           cy="197.505"
@@ -963,7 +913,6 @@ const AnimatedBG = () => {
           fill="#8194ee"
           ref={e => (revealRefs.current[127] = e)}
         />
-        <path fill="#fff" d="M1141.111 175.556h87.778v87.778h-87.778z" />
         <circle
           cx="1163.055"
           cy="197.505"
@@ -992,7 +941,6 @@ const AnimatedBG = () => {
           fill="#b4c0f5"
           ref={e => (revealRefs.current[131] = e)}
         />
-        <path fill="#fff" d="M1228.889 175.556h87.778v87.778h-87.778z" />
         <circle
           cx="1250.835"
           cy="197.505"
@@ -1021,7 +969,6 @@ const AnimatedBG = () => {
           fill="#b4c0f5"
           ref={e => (revealRefs.current[135] = e)}
         />
-        <path fill="#fff" d="M1316.667 175.556h87.778v87.778h-87.778z" />
         <circle
           cx="1338.615"
           cy="197.505"
@@ -1050,7 +997,6 @@ const AnimatedBG = () => {
           fill="#d0d7f9"
           ref={e => (revealRefs.current[139] = e)}
         />
-        <path fill="#fff" d="M0 263.333h87.778v87.778H0z" />
         <circle
           cx="21.945"
           cy="285.275"
@@ -1079,7 +1025,6 @@ const AnimatedBG = () => {
           fill="#a8b6f3"
           ref={e => (revealRefs.current[143] = e)}
         />
-        <path fill="#fff" d="M87.778 263.333h87.778v87.778H87.778z" />
         <circle
           cx="109.725"
           cy="285.275"
@@ -1108,7 +1053,6 @@ const AnimatedBG = () => {
           fill="#d0d7f8"
           ref={e => (revealRefs.current[147] = e)}
         />
-        <path fill="#fff" d="M175.556 263.333h87.778v87.778h-87.778z" />
         <circle
           cx="197.505"
           cy="285.275"
@@ -1137,7 +1081,6 @@ const AnimatedBG = () => {
           fill="#8598ee"
           ref={e => (revealRefs.current[151] = e)}
         />
-        <path fill="#fff" d="M263.333 263.333h87.778v87.778h-87.778z" />
         <circle
           cx="285.275"
           cy="285.275"
@@ -1194,7 +1137,6 @@ const AnimatedBG = () => {
           fill="#6e85eb"
           ref={e => (revealRefs.current[159] = e)}
         />
-        <path fill="#fff" d="M702.222 263.333H790v87.778h-87.778z" />
         <circle
           cx="724.165"
           cy="285.275"
@@ -1223,7 +1165,6 @@ const AnimatedBG = () => {
           fill="#b3bff5"
           ref={e => (revealRefs.current[163] = e)}
         />
-        <path fill="#fff" d="M790 263.333h87.778v87.778H790z" />
         <circle
           cx="811.945"
           cy="285.275"
@@ -1252,7 +1193,6 @@ const AnimatedBG = () => {
           fill="#aebbf4"
           ref={e => (revealRefs.current[167] = e)}
         />
-        <path fill="#fff" d="M877.778 263.333h87.778v87.778h-87.778z" />
         <circle
           cx="899.725"
           cy="285.275"
@@ -1295,7 +1235,6 @@ const AnimatedBG = () => {
           fill="#6880ea"
           ref={e => (revealRefs.current[173] = e)}
         />
-        <path fill="#fff" d="M1141.111 263.333h87.778v87.778h-87.778z" />
         <circle
           cx="1163.055"
           cy="285.275"
@@ -1331,7 +1270,6 @@ const AnimatedBG = () => {
           fill="#879aef"
           ref={e => (revealRefs.current[178] = e)}
         />
-        <path fill="#fff" d="M1316.667 263.333h87.778v87.778h-87.778z" />
         <circle
           cx="1338.615"
           cy="285.275"
@@ -1360,7 +1298,6 @@ const AnimatedBG = () => {
           fill="#eceffc"
           ref={e => (revealRefs.current[182] = e)}
         />
-        <path fill="#fff" d="M0 351.111h87.778v87.778H0z" />
         <circle
           cx="21.945"
           cy="373.055"
@@ -1389,7 +1326,6 @@ const AnimatedBG = () => {
           fill="#8195ee"
           ref={e => (revealRefs.current[186] = e)}
         />
-        <path fill="#fff" d="M87.778 351.111h87.778v87.778H87.778z" />
         <circle
           cx="109.725"
           cy="373.055"
@@ -1439,7 +1375,6 @@ const AnimatedBG = () => {
           fill="#b4bff5"
           ref={e => (revealRefs.current[193] = e)}
         />
-        <path fill="#fff" d="M438.889 351.111h87.778v87.778h-87.778z" />
         <circle
           cx="460.835"
           cy="373.055"
@@ -1510,7 +1445,6 @@ const AnimatedBG = () => {
           fill="#c0caf6"
           ref={e => (revealRefs.current[203] = e)}
         />
-        <path fill="#fff" d="M1053.333 351.111h87.778v87.778h-87.778z" />
         <circle
           cx="1075.275"
           cy="373.055"
@@ -1539,7 +1473,6 @@ const AnimatedBG = () => {
           fill="#c1caf6"
           ref={e => (revealRefs.current[207] = e)}
         />
-        <path fill="#fff" d="M1141.111 351.111h87.778v87.778h-87.778z" />
         <circle
           cx="1163.055"
           cy="373.055"
@@ -1568,7 +1501,6 @@ const AnimatedBG = () => {
           fill="#f0f2fd"
           ref={e => (revealRefs.current[211] = e)}
         />
-        <path fill="#fff" d="M1228.889 351.111h87.778v87.778h-87.778z" />
         <circle
           cx="1250.835"
           cy="373.055"
@@ -1604,7 +1536,6 @@ const AnimatedBG = () => {
           fill="#a7b4f3"
           ref={e => (revealRefs.current[216] = e)}
         />
-        <path fill="#fff" d="M0 438.889h87.778v87.778H0z" />
         <circle
           cx="21.945"
           cy="460.835"
@@ -1654,7 +1585,6 @@ const AnimatedBG = () => {
           fill="#6a81eb"
           ref={e => (revealRefs.current[223] = e)}
         />
-        <path fill="#fff" d="M351.111 438.889h87.778v87.778h-87.778z" />
         <circle
           cx="373.055"
           cy="460.835"
@@ -1697,7 +1627,6 @@ const AnimatedBG = () => {
           fill="#7087eb"
           ref={e => (revealRefs.current[229] = e)}
         />
-        <path fill="#fff" d="M614.444 438.889h87.778v87.778h-87.778z" />
         <circle
           cx="636.385"
           cy="460.835"
@@ -1747,7 +1676,6 @@ const AnimatedBG = () => {
           fill="#6981ea"
           ref={e => (revealRefs.current[236] = e)}
         />
-        <path fill="#fff" d="M965.556 438.889h87.778v87.778h-87.778z" />
         <circle
           cx="987.505"
           cy="460.835"
@@ -1783,7 +1711,6 @@ const AnimatedBG = () => {
           fill="#bdc8f6"
           ref={e => (revealRefs.current[241] = e)}
         />
-        <path fill="#fff" d="M1141.111 438.889h87.778v87.778h-87.778z" />
         <circle
           cx="1163.055"
           cy="460.835"
@@ -1833,7 +1760,6 @@ const AnimatedBG = () => {
           fill="#d4dbf9"
           ref={e => (revealRefs.current[248] = e)}
         />
-        <path fill="#fff" d="M87.778 526.667h87.778v87.778H87.778z" />
         <circle
           cx="109.725"
           cy="548.615"
@@ -1862,7 +1788,6 @@ const AnimatedBG = () => {
           fill="#fbfcfe"
           ref={e => (revealRefs.current[252] = e)}
         />
-        <path fill="#fff" d="M175.556 526.667h87.778v87.778h-87.778z" />
         <circle
           cx="197.505"
           cy="548.615"
@@ -1891,7 +1816,6 @@ const AnimatedBG = () => {
           fill="#b7c2f5"
           ref={e => (revealRefs.current[256] = e)}
         />
-        <path fill="#fff" d="M263.333 526.667h87.778v87.778h-87.778z" />
         <circle
           cx="285.275"
           cy="548.615"
@@ -1920,7 +1844,6 @@ const AnimatedBG = () => {
           fill="#9eadf2"
           ref={e => (revealRefs.current[260] = e)}
         />
-        <path fill="#fff" d="M351.111 526.667h87.778v87.778h-87.778z" />
         <circle
           cx="373.055"
           cy="548.615"
@@ -1949,7 +1872,6 @@ const AnimatedBG = () => {
           fill="#dadffa"
           ref={e => (revealRefs.current[264] = e)}
         />
-        <path fill="#fff" d="M438.889 526.667h87.778v87.778h-87.778z" />
         <circle
           cx="460.835"
           cy="548.615"
@@ -1978,7 +1900,6 @@ const AnimatedBG = () => {
           fill="#e2e7fb"
           ref={e => (revealRefs.current[268] = e)}
         />
-        <path fill="#fff" d="M526.667 526.667h87.778v87.778h-87.778z" />
         <circle
           cx="548.615"
           cy="548.615"
@@ -2007,7 +1928,6 @@ const AnimatedBG = () => {
           fill="#fbfbfe"
           ref={e => (revealRefs.current[272] = e)}
         />
-        <path fill="#fff" d="M614.444 526.667h87.778v87.778h-87.778z" />
         <circle
           cx="636.385"
           cy="548.615"
@@ -2043,7 +1963,6 @@ const AnimatedBG = () => {
           fill="#93a4f0"
           ref={e => (revealRefs.current[277] = e)}
         />
-        <path fill="#fff" d="M790 526.667h87.778v87.778H790z" />
         <circle
           cx="811.945"
           cy="548.615"
@@ -2072,7 +1991,6 @@ const AnimatedBG = () => {
           fill="#a2b1f2"
           ref={e => (revealRefs.current[281] = e)}
         />
-        <path fill="#fff" d="M877.778 526.667h87.778v87.778h-87.778z" />
         <circle
           cx="899.725"
           cy="548.615"
@@ -2101,7 +2019,6 @@ const AnimatedBG = () => {
           fill="#fafbfe"
           ref={e => (revealRefs.current[285] = e)}
         />
-        <path fill="#fff" d="M965.556 526.667h87.778v87.778h-87.778z" />
         <circle
           cx="987.505"
           cy="548.615"
@@ -2137,7 +2054,6 @@ const AnimatedBG = () => {
           fill="#b4c0f5"
           ref={e => (revealRefs.current[290] = e)}
         />
-        <path fill="#fff" d="M1141.111 526.667h87.778v87.778h-87.778z" />
         <circle
           cx="1163.055"
           cy="548.615"
@@ -2208,7 +2124,6 @@ const AnimatedBG = () => {
           fill="#bfc9f6"
           ref={e => (revealRefs.current[300] = e)}
         />
-        <path fill="#fff" d="M351.111 614.444h87.778v87.778h-87.778z" />
         <circle
           cx="373.055"
           cy="636.385"
@@ -2244,7 +2159,6 @@ const AnimatedBG = () => {
           fill="#f1f3fd"
           ref={e => (revealRefs.current[305] = e)}
         />
-        <path fill="#fff" d="M526.667 614.444h87.778v87.778h-87.778z" />
         <circle
           cx="548.615"
           cy="636.385"
@@ -2287,7 +2201,6 @@ const AnimatedBG = () => {
           fill="#fafbfe"
           ref={e => (revealRefs.current[311] = e)}
         />
-        <path fill="#fff" d="M790 614.444h87.778v87.778H790z" />
         <circle
           cx="811.945"
           cy="636.385"
@@ -2316,7 +2229,6 @@ const AnimatedBG = () => {
           fill="#99a9f1"
           ref={e => (revealRefs.current[315] = e)}
         />
-        <path fill="#fff" d="M877.778 614.444h87.778v87.778h-87.778z" />
         <circle
           cx="899.725"
           cy="636.385"
@@ -2352,7 +2264,6 @@ const AnimatedBG = () => {
           fill="#e2e7fb"
           ref={e => (revealRefs.current[320] = e)}
         />
-        <path fill="#fff" d="M1053.333 614.444h87.778v87.778h-87.778z" />
         <circle
           cx="1075.275"
           cy="636.385"
@@ -2381,7 +2292,6 @@ const AnimatedBG = () => {
           fill="#a2b0f2"
           ref={e => (revealRefs.current[324] = e)}
         />
-        <path fill="#fff" d="M1141.111 614.444h87.778v87.778h-87.778z" />
         <circle
           cx="1163.055"
           cy="636.385"
@@ -2410,7 +2320,6 @@ const AnimatedBG = () => {
           fill="#94a5f0"
           ref={e => (revealRefs.current[328] = e)}
         />
-        <path fill="#fff" d="M1228.889 614.444h87.778v87.778h-87.778z" />
         <circle
           cx="1250.835"
           cy="636.385"
@@ -2446,7 +2355,6 @@ const AnimatedBG = () => {
           fill="#b4bff5"
           ref={e => (revealRefs.current[333] = e)}
         />
-        <path fill="#fff" d="M0 702.222h87.778V790H0z" />
         <circle
           cx="21.945"
           cy="724.165"
@@ -2482,7 +2390,6 @@ const AnimatedBG = () => {
           fill="#e1e5fb"
           ref={e => (revealRefs.current[338] = e)}
         />
-        <path fill="#fff" d="M175.556 702.222h87.778V790h-87.778z" />
         <circle
           cx="197.505"
           cy="724.165"
@@ -2518,7 +2425,6 @@ const AnimatedBG = () => {
           fill="#bcc7f6"
           ref={e => (revealRefs.current[343] = e)}
         />
-        <path fill="#fff" d="M351.111 702.222h87.778V790h-87.778z" />
         <circle
           cx="373.055"
           cy="724.165"
@@ -2547,7 +2453,6 @@ const AnimatedBG = () => {
           fill="#bac5f6"
           ref={e => (revealRefs.current[348] = e)}
         />
-        <path fill="#fff" d="M438.889 702.222h87.778V790h-87.778z" />
         <circle
           cx="460.835"
           cy="724.165"
@@ -2590,7 +2495,6 @@ const AnimatedBG = () => {
           fill="#6880ea"
           ref={e => (revealRefs.current[354] = e)}
         />
-        <path fill="#fff" d="M702.222 702.222H790V790h-87.778z" />
         <circle
           cx="724.165"
           cy="724.165"
@@ -2619,7 +2523,6 @@ const AnimatedBG = () => {
           fill="#cbd4f8"
           ref={e => (revealRefs.current[358] = e)}
         />
-        <path fill="#fff" d="M790 702.222h87.778V790H790z" />
         <circle
           cx="811.945"
           cy="724.165"
@@ -2648,7 +2551,6 @@ const AnimatedBG = () => {
           fill="#cbd3f8"
           ref={e => (revealRefs.current[362] = e)}
         />
-        <path fill="#fff" d="M877.778 702.222h87.778V790h-87.778z" />
         <circle
           cx="899.725"
           cy="724.165"
@@ -2684,7 +2586,6 @@ const AnimatedBG = () => {
           fill="#b7c2f5"
           ref={e => (revealRefs.current[367] = e)}
         />
-        <path fill="#fff" d="M1053.333 702.222h87.778V790h-87.778z" />
         <circle
           cx="1075.275"
           cy="724.165"
@@ -2727,7 +2628,6 @@ const AnimatedBG = () => {
           fill="#c0caf6"
           ref={e => (revealRefs.current[373] = e)}
         />
-        <path fill="#fff" d="M1316.667 702.222h87.778V790h-87.778z" />
         <circle
           cx="1338.615"
           cy="724.165"

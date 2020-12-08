@@ -11,15 +11,10 @@ import PropTypes from "prop-types"
 const Layout = ({ children }) => {
   return (
     <>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
+      <div className="bg-indigo-500 w-full h-screen text-white">
+        <main className="container py-20 mx-auto">{children}</main>
         <footer
+          className="container mx-auto"
           style={{
             marginTop: `2rem`,
           }}
