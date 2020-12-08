@@ -71,13 +71,15 @@ const HeroNav = ({ profileRefs, navRefs, animateRedirect }) => {
           >
             Projects
           </span>
-          <span
+          <a
             ref={e => (navRefs.current[2] = e)}
+            role="menuitem"
+            href="/resume/"
             onClick={e => animateRedirect(e, "/resume/")}
             className="font-Mada font-bold mx-4 text-3xl 3xl:text-4xl hover:text-white transition hero-link cursor-pointer"
           >
             Resume
-          </span>
+          </a>
         </div>
         <div className="sm:hidden flex ml-auto">
           <svg

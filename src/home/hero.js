@@ -121,6 +121,7 @@ const Hero = ({
             </button>
             <a
               href="/resume/"
+              role="menuitem"
               onClick={e => animateRedirect(e, "/resume/")}
               className="py-2 cursor-pointer items-start inline-block text-center 3xl:py-4 uppercase border-white font-Mada text-3xl md:text-4xl xl:text-3xl 3xl:text-5xl border-4 rounded-xl mx-auto my-2 sm:mr-0 w-44 sm:w-52 xl:w-44 3xl:w-64 swipe-hover"
             >
