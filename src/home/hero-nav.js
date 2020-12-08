@@ -16,37 +16,38 @@ const HeroNav = ({ profileRefs, navRefs }) => {
     }
   `)
 
-  const [toggle, setToggle] = useState(false)
   const mobileRefs = useRef(null)
   const mobileNavRefs = useRef([])
 
   let tl = gsap.timeline({ paused: true })
 
-  tl.fromTo(
-    mobileRefs.current,
-    {
-      duration: 0.5,
-      opacity: 0,
-      display: "none",
-      clipPath: "circle(0% at 100% 0%)",
-      ease: "power3.out",
-    },
-    {
-      duration: 0.5,
-      opacity: 100,
-      display: "flex",
-      clipPath: "circle(200% at 100% 0%)",
-      ease: "power3.out",
-    }
-  )
+  if (mobileRefs.current) {
+    tl.fromTo(
+      mobileRefs.current,
+      {
+        duration: 0.5,
+        opacity: 0,
+        display: "none",
+        clipPath: "circle(0% at 100% 0%)",
+        ease: "power3.out",
+      },
+      {
+        duration: 0.5,
+        opacity: 100,
+        display: "flex",
+        clipPath: "circle(170% at 100% 0%)",
+        ease: "power3.out",
+      }
+    )
 
-  useEffect(() => {
-    if (toggle) {
-      tl.play(0)
-    } else {
-      if (tl.reversed()) tl.reverse(0)
-    }
-  }, [toggle, tl])
+    tl.from(mobileNavRefs.current, {
+      duration: 0.3,
+      opacity: 0,
+      translateY: -15,
+      ease: "power3.out",
+      stagger: 0.2,
+    })
+  }
 
   return (
     <>
@@ -83,7 +84,7 @@ const HeroNav = ({ profileRefs, navRefs }) => {
             fill="currentColor"
             viewBox="0 0 20 20"
             onClick={() => {
-              setToggle(true)
+              tl.play(0)
             }}
             ref={e => (navRefs.current[3] = e)}
             xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +108,7 @@ const HeroNav = ({ profileRefs, navRefs }) => {
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           onClick={() => {
-            setToggle(false)
+            tl.reverse(0)
           }}
         >
           <path

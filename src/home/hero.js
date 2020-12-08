@@ -48,8 +48,7 @@ const Hero = ({ bgRefs, contentRefs, profileRefs, navRefs, iconRefs }) => {
         ease: "power1.inOut",
         clearProps: "opacity",
         stagger: {
-          amount: 0.6,
-          ease: "power2.inOut",
+          amount: 0.8,
         },
       },
       "-=0.4"
@@ -64,8 +63,7 @@ const Hero = ({ bgRefs, contentRefs, profileRefs, navRefs, iconRefs }) => {
         transformOrigin: "center",
         ease: "power1.inOut",
         stagger: {
-          amount: 0.6,
-          ease: "power2.inOut",
+          amount: 0.8,
         },
       },
       "-=1.4"
