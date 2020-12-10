@@ -1,7 +1,7 @@
 ;(function () {
   document.body.classList.remove("hidden")
 
-  var bgAdmin = gsap.fromTo(
+  const bgAdmin = gsap.fromTo(
     ".circle-bg > g > circle",
     {
       opacity: 0,
@@ -28,38 +28,31 @@
 
   bgAdmin.play()
 
-  let tl_bg = gsap.timeline({ paused: true })
+  const tl_bg = gsap.timeline({ paused: true })
   const mediaQuery = window.matchMedia("(min-width: 1280px)")
-  tl_bg.from(".bg-ref", {
+  if (mediaQuery.matches) {
+    tl_bg.from(".bg-ref", {
+      opacity: 0,
+      translateX: "-100%",
+      duration: mediaQuery.matches ? 1 : 0,
+      delay: 1,
+      transformOrigin: "center",
+    })
+  }
+
+  tl_bg.from(".content-ref", {
+    duration: 0.5,
+    translateY: "-20%",
     opacity: 0,
-    translateX: "-100%",
-    duration: mediaQuery.matches ? 1 : 0,
-    delay: 1,
     transformOrigin: "center",
+    ease: "power2.inOut",
   })
 
-  tl_bg.fromTo(
-    ".content-ref",
-    {
-      clipPath: "circle(0% at 0px 0px)",
-    },
-    {
-      duration: 1,
-      clipPath: "circle(200% at 0px 0px)",
-      transformOrigin: "center",
-      ease: "elastic.out(1, 0.3)",
-    }
-  )
-
-  tl_bg.from(
-    ".profile-pic",
-    {
-      opacity: 0,
-      border: 0,
-      duration: 1,
-    },
-    "-=1"
-  )
+  tl_bg.from(".profile-pic", {
+    opacity: 0,
+    border: 0,
+    duration: 1,
+  })
 
   tl_bg.from(
     ".icon-ref",
@@ -94,7 +87,7 @@
 
   tl_bg.play()
 
-  let tl_mobile = gsap.timeline({ paused: true })
+  const tl_mobile = gsap.timeline({ paused: true })
 
   tl_mobile.fromTo(
     ".mobile-ref",
@@ -130,7 +123,9 @@
     tl_mobile.reverse(0)
   })
 
-  let allLinks = document.querySelectorAll(".mobile-nav,.nav-ref,.swipe-hover")
+  const allLinks = document.querySelectorAll(
+    ".mobile-nav,.nav-ref,.swipe-hover"
+  )
 
   for (let index = 0; index < allLinks.length; index++) {
     allLinks[index].addEventListener("click", event => {
