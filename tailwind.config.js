@@ -1,11 +1,14 @@
-const colors = require("tailwindcss/colors")
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
+  purge: {
+    // enabled: true,
+    content: ["dist/**/*.html", "./src/**/*.njk"],
+  },
   theme: {
     extend: {
       colors: {
@@ -18,9 +21,9 @@ module.exports = {
     },
     fontFamily: {
       Overlock: ["Overlock", "sans-serif"],
-      Mada: ["Mada", "serif"], // Ensure fonts with spaces have " " surrounding it.
+      Mada: ["Mada", "serif"],
     },
   },
   variants: {},
   plugins: [],
-}
+};
