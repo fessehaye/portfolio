@@ -1,10 +1,11 @@
-const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
+const pluginTailwindCSS = require("eleventy-plugin-tailwindcss")
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(pluginTailwindCSS);
+  eleventyConfig.addPlugin(pluginTailwindCSS)
 
-  eleventyConfig.addPassthroughCopy("src/img");
-  eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/img")
+  eleventyConfig.addPassthroughCopy("src/js")
+
   return {
     dir: {
       input: "src",
@@ -13,5 +14,5 @@ module.exports = function (eleventyConfig) {
     },
     htmlTemplateEngine: "njk",
     templateFormats: ["html", "md", "njk"],
-  };
-};
+  }
+}

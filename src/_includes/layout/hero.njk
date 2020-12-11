@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Simon Fessehaye</title>
+        <title>Home | Simon Fessehaye</title>
+        <meta name="description" content="{{site.description}}">
+        <meta name="author" content="{{site.author}}">
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body class="hidden">
@@ -15,5 +17,13 @@
         </div>
         <script defer="async" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
         <script defer="async" src="/js/index.js"></script>
+        <script>
+            window.onload = window.onpageshow = function () {
+                document
+                    .body
+                    .classList
+                    .remove("hidden");
+            };
+        </script>
     </body>
 </html>

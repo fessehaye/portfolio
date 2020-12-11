@@ -127,8 +127,8 @@
     ".mobile-nav,.nav-ref,.swipe-hover"
   )
 
-  for (let index = 0; index < allLinks.length; index++) {
-    allLinks[index].addEventListener("click", event => {
+  for (const link of allLinks) {
+    link.addEventListener("click", event => {
       event.preventDefault()
       bgAdmin.kill()
       let tl = gsap.timeline({ paused: true })
