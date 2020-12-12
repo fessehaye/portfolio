@@ -1,0 +1,86 @@
+[
+  {
+    "company": "Beamdog",
+    "companySite": "https://www.beamdog.com/",
+    "startDate": "Sept 2018",
+    "endDate": "Present",
+    "title": "Web Developer/Game Developer",
+    "description": "Full-time position. Worked on the web based game, 'Axis & Allies'",
+    "details": [
+      "Used web technology like Sass, Typescript and React to create UI components for the game",
+      "Implementing mockups and wireframes from designers to recreate common game views like main menus and player profiles"
+    ]
+  },
+  {
+    "company": "TeachMe",
+    "companySite": "https://www.teachme.com/",
+    "startDate": "Feb 2018",
+    "endDate": "Aug 2018",
+    "title": "Web Developer",
+    "description": "Full-time position. Working on web applications for educational games",
+    "details": [
+      "Doing frontend development and design tasks on mathgames.com including implementing membership forms and report cards"
+    ]
+  },
+  {
+    "company": "Iomer Internet Solutions",
+    "companySite": "https://www.iomer.com",
+    "startDate": "Sept 2016",
+    "endDate": "Feb 2018",
+    "title": "Junior Consultant,Solution Developer",
+    "description": "Full-time position that provides software development based primarily on the Microsoft platform to multiple clients.",
+    "details": [
+      "Collaborate with clients and other team members to plan and conduct large websites and intranets",
+      "Support solution architecture at both enterprise and project levels using Sharepoint and ASP.Net projects",
+      "Collaborate with designers and project managers to create front-end solutions and branding using Sass and Javascript Libraries (React, AngularJS, Jquery)"
+    ]
+  },
+  {
+    "company": "Junior Web Programmer",
+    "companySite": "http://www.fourwinds.ca/",
+    "startDate": "June 2015",
+    "endDate": "Nov 2016",
+    "title": "Junior Web Programmer",
+    "description": "Part-time position that consists of coding at all levels of the application stack - database and SQL, application servers in python and django, and the front-end in HTML, CSS, and jQuery.",
+    "details": [
+      "Modify existing Django applications based of clients requests and deploy them on Digitalocean Droplets"
+    ]
+  },
+  {
+    "company": "Junior Web Programmer",
+    "companySite": "http://www.fourwinds.ca/",
+    "startDate": "June 2015",
+    "endDate": "Oct 2015",
+    "title": "Junior Web Programmer",
+    "description": "Part-time position that consists of coding at all levels of the application stack - database and SQL, application servers in python and django, and the front-end in HTML, CSS, and jQuery.",
+    "details": [
+      "Added API and functionality to Symfony framework application",
+      "Used PHP Websockets and front-end Javascript to create simple chat application"
+    ]
+  },
+  {
+    "company": "University Of Alberta/Faculty of Business",
+    "companySite": "https://www.ualberta.ca/index.html",
+    "startDate": "Nov 2014",
+    "endDate": "Apr 2015",
+    "title": "Internet Design and Programming Assistant",
+    "description": "Worked part-time remotely using django and python to create a web application to support web-scapping scripts.",
+    "details": [
+      "Recreate existing NodeJS project as a Python Django web application",
+      "Create Django applications for large-scale research project"
+    ]
+  },
+  {
+    "company": "University of Alberta/Technical Support Team",
+    "companySite": "https://uofa.ualberta.ca/computing-science/links-and-resources/technical-support",
+    "startDate": "May 2013",
+    "endDate": "July 2014",
+    "title": "Helpdesk Consultant",
+    "description": "Worked in the CS Helpdesk year-round helping students and staff with IT related issues.",
+    "details": [
+      "Troubleshooting undergraduate/graduate student accounts using various techniques",
+      "Using scripting languages to represent data from specific machines",
+      "Using linux scripts/commands to obtain information about specific machines as well as sshing remotely to servers within the Computing Science department"
+    ]
+  }
+]

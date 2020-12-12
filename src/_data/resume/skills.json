@@ -1,0 +1,49 @@
+{
+    "databases": [
+        "GraphQL",
+        "Oracle",
+        "SQLite",
+        "MySQL",
+        "MongoDB",
+        "PostgreSQL",
+        "PouchDB/CouchDB",
+        "Microsoft SQL Server"
+    ],
+    "languages": [
+        "Javascript",
+        "Python",
+        "HTML5/CSS",
+        "PHP",
+        "Perl",
+        "Matlab/Octave",
+        "C#",
+        "Java",
+        "Swift"
+    ],
+    "other": [
+        "Netlify",
+        "Figma",
+        "Xcode",
+        "Chrome Extensions"
+    ],
+    "frameworks": [
+        "Django",
+        "Flask",
+        "Bootstrap/Bulma/Tailwindcss",
+        "AngularJS",
+        "NodeJS",
+        "Symfony",
+        "Codeigniter",
+        "ASP.NET Core",
+        "React",
+        "Redux",
+        "Sass",
+        "Vue",
+        "Gatsby",
+        "NextJS",
+        "Electron",
+        "Typescript",
+        "Greensock",
+        "Eleventy"
+    ]
+}
