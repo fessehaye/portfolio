@@ -8,22 +8,21 @@
         <meta name="author" content="{{site.author}}">
         <link rel="stylesheet" href="./css/main.css">
     </head>
-    <body class="hidden">
+    <body class="">
         <div class="w-full min-h-screen xl:h-screen relative">
             {% include "../components/_animated-bg.njk" %}
             <div class="hero-content">
                 {{ content | safe }}
             </div>
         </div>
+        <script defer="async">
+            document
+                .body
+                .classList
+                .add("hidden");
+        </script>
         <script defer="async" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
         <script defer="async" src="/js/index.js"></script>
-        <script>
-            window.addEventListener('pageshow', function (event) {
-                document
-                    .body
-                    .classList
-                    .remove("hidden");
-            });
-        </script>
+
     </body>
 </html>
