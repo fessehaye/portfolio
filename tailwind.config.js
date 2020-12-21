@@ -1,4 +1,4 @@
-const colors = require("tailwindcss/colors");
+const colors = require("tailwindcss/colors")
 
 module.exports = {
   future: {
@@ -22,8 +22,9 @@ module.exports = {
     fontFamily: {
       Overlock: ["Overlock", "sans-serif"],
       Mada: ["Mada", "serif"],
+      default: ["Proza Libre", "sans-serif"],
     },
   },
   variants: {},
   plugins: [],
-};
+}

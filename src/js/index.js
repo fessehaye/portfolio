@@ -34,8 +34,8 @@
     tl_bg.from(".bg-ref", {
       opacity: 0,
       translateX: "-100%",
-      duration: mediaQuery.matches ? 1 : 0,
-      delay: 1,
+      duration: mediaQuery.matches ? 0.5 : 0,
+      delay: 0.5,
       transformOrigin: "center",
     })
   }
@@ -51,7 +51,7 @@
   tl_bg.from(".profile-pic", {
     opacity: 0,
     border: 0,
-    duration: 1,
+    duration: 0.5,
   })
 
   tl_bg.from(
@@ -135,7 +135,7 @@
 
       tl.to(".hero-content", {
         opacity: 0,
-        duration: 1,
+        duration: 0.3,
       })
       const allCircles = Array.from(
         document.querySelectorAll(".circle-bg > g > circle")
@@ -156,7 +156,7 @@
 
       tl.to(randomCircle, {
         scale: 100,
-        duration: 1,
+        duration: 0.5,
         opacity: 100,
         fill: "#6366F1",
         onComplete: () => {

@@ -1,10 +1,81 @@
 ---
-layout: layout/default.njk
+layout: layout/default
 ---
 
-<h1 class="font-Overlock text-4xl font-black pb-4">Resume</h1>
-<p class="font-Overlock text-xl font-black">Work in progress</p>
+<section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5">
+    <h1 class="font-Mada text-3xl font-black mb-2">Simon Fessehaye</h1>
+    <h3 class="font-Mada text-xl font-black mb-2">Front-End Developer</h3>
+</section>
 
-{%- for job in resume.history -%}
-    <div>{{job.title}}</div>
-{%- endfor -%}
+<h2 class="text-white text-3xl uppercase font-Mada py-4 mt-6 px-2">Work Experience</h2>
+
+{% for job in resume.history %}
+    <section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-8">
+        <div>
+            {% if job.logo %}
+                <img src="{{job.logo}}" alt="company-log" class="w-20 h-20 mb-4"/>
+            {% endif %}
+        </div>
+        <div>
+            <p class="font-Mada text-xl font-black mb-4 leading-6 text-gray-900">{{job.company}}</p>
+            <p class="font-Mada text-xl font-black mb-1 leading-tight text-gray-500">{{job.title}}</p>
+            <p class="font-default text-lg mb-2 text-gray-500">{{job.startDate}} - {{job.endDate}}</p>
+            <p class="font-default text-lg mb-6 mt-6 leading-normal">{{job.description}}</p>
+            <ul class="list-disc pl-4">
+                {% for detail in job.details %}
+                    <li class="mb-2 text-md leading-tight">{{detail}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </section>
+{% endfor %}
+
+<h2 class="text-white text-3xl uppercase font-Mada py-4 mt-6 px-2">Skills</h2>
+
+<section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-6">
+    {% for name, skills in resume.skills %}
+        <article class="mb-10">
+            <p class="font-Mada text-xl font-black mb-4 leading-4 text-gray-900 uppercase tracking-wide">{{name}}</p>
+
+            <div class="flex flex-wrap w-100 justify-start">
+                {% for skill in skills %}
+                    <span class="mb-2 mr-4 text-md leading-tight uppercase tracking-wider text-white bg-indigo-600 p-2 rounded-lg shadow-md font-Mada">{{skill}}</span>
+                {% endfor %}
+            </div>
+        </article>
+    {% endfor %}
+</section>
+
+<h2 class="text-white text-3xl uppercase font-Mada py-4 mt-6 px-2">Education</h2>
+
+<section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-6">
+    <article class="mb-10">
+        <p class="font-Mada text-xl font-black mb-2 leading-4 text-gray-900 tracking-wide">Specialization in Computing Science, Bachelor,  University of Alberta</p>
+        <p class="font-default text-lg mb-6 text-gray-500">Sept 2010 - Sept 2015</p>
+        <div class="flex flex-wrap w-100 justify-start">
+            {% for course in resume.courses %}
+                <span class="mb-2 mr-4 text-md leading-tight uppercase tracking-wider text-white bg-indigo-600 p-2 rounded-lg shadow-md font-Mada">{{course}}</span>
+            {% endfor %}
+        </div>
+    </article>
+</section>
+
+<h2 class="text-white text-3xl uppercase font-Mada py-4 mt-6 px-2">Volunteer Work</h2>
+
+{% for volunteer in resume.volunteers %}
+    <section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-8">
+        <div>
+            <p class="font-Mada text-xl font-black mb-4 leading-6 text-gray-900">{{volunteer.group}}</p>
+            <p class="font-Mada text-xl font-black mb-1 leading-tight text-gray-500">{{volunteer.title}}</p>
+            <p class="font-default text-lg mb-2 text-gray-500">{{volunteer.startDate}} - {{volunteer.endDate}}</p>
+            <p class="font-default text-lg mb-6 mt-6 leading-normal">{{volunteer.description}}</p>
+            <ul class="list-disc pl-4">
+                {% for detail in volunteer.details %}
+                    <li class="mb-2 text-md leading-tight">{{detail}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </section>
+{% endfor %}
