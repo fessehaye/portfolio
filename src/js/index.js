@@ -52,6 +52,8 @@
     opacity: 0,
     border: 0,
     duration: 0.5,
+    clearProps: "opacity",
+    transformOrigin: "center",
   })
 
   tl_bg.from(
