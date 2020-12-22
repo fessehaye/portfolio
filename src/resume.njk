@@ -2,80 +2,140 @@
 layout: layout/default
 ---
 
-<section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5">
-    <h1 class="font-Mada text-3xl font-black mb-2">Simon Fessehaye</h1>
-    <h3 class="font-Mada text-lg font-black mb-2 text-gray-500">Front-End Developer</h3>
-</section>
+<div class="lg:grid lg:grid-cols-2 lg:grid-flow-row-dense lg:gap-x-6 items-start relative">
 
-<h2 class="text-white text-3xl uppercase font-Mada py-4 mt-6 px-2">Work Experience</h2>
+    {% include "./_includes/components/_resume-nav.njk" %}
 
-{% for job in resume.history %}
-    <section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-8">
-        <div>
-            {% if job.logo %}
-                <img src="{{job.logo}}" alt="company-log" class="w-20 h-20 mb-4"/>
-            {% endif %}
-        </div>
-        <div>
-            <p class="font-Mada text-xl font-black mb-4 leading-6 text-gray-900">{{job.company}}</p>
-            <p class="font-Mada text-xl font-black mb-1 leading-tight text-gray-500">{{job.title}}</p>
-            <p class="font-default text-lg mb-2 text-gray-500">{{job.startDate}} - {{job.endDate}}</p>
-            <p class="font-default text-lg mb-6 mt-6 leading-normal">{{job.description}}</p>
-            <ul class="list-disc pl-4">
-                {% for detail in job.details %}
-                    <li class="mb-2 text-md leading-tight">{{detail}}</li>
-                {% endfor %}
-            </ul>
-        </div>
+    <section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 col-start-1 lg:mb-6">
+        <h1 class="font-Mada text-3xl font-black mb-2">Simon Fessehaye</h1>
+        <h3 class="font-Mada text-lg font-black mb-4 text-gray-500">Front-End Developer</h3>
 
+        <a href="mailto:fessehay@ualberta.ca" target="_blank" rel="noopener noreferrer" class="flex mb-1 group">
+            <svg class="w-6 h-6 mr-1 text-gray-500 group-hover:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            <span class="font-default text-lg ml-2 text-gray-500 group-hover:text-green-400">fessehay@ualberta.ca</span>
+        </a>
+
+        <a href="http://" target="_blank" rel="noopener noreferrer" class="flex mb-1 group">
+            <svg
+                class="w-6 h-6 mr-1 text-gray-500 group-hover:text-green-400"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+            >
+                <path d="M13.18 11.309c-.718 0-1.3.807-1.3 1.799 0 .994.582 1.801 1.3 1.801s1.3-.807 1.3-1.801c-.001-.992-.582-1.799-1.3-1.799zm4.526-4.683c.149-.365.155-2.439-.635-4.426 0 0-1.811.199-4.551 2.08-.575-.16-1.548-.238-2.519-.238-.973 0-1.945.078-2.52.238C4.74 2.399 2.929 2.2 2.929 2.2c-.789 1.987-.781 4.061-.634 4.426C1.367 7.634.8 8.845.8 10.497c0 7.186 5.963 7.301 7.467 7.301l1.734.002 1.732-.002c1.506 0 7.467-.115 7.467-7.301 0-1.652-.566-2.863-1.494-3.871zm-7.678 10.289h-.056c-3.771 0-6.709-.449-6.709-4.115 0-.879.31-1.693 1.047-2.369C5.537 9.304 7.615 9.9 9.972 9.9h.056c2.357 0 4.436-.596 5.664.531.735.676 1.045 1.49 1.045 2.369 0 3.666-2.937 4.115-6.709 4.115zm-3.207-5.606c-.718 0-1.3.807-1.3 1.799 0 .994.582 1.801 1.3 1.801.719 0 1.301-.807 1.301-1.801 0-.992-.582-1.799-1.301-1.799z"/>
+            </svg>
+            <span class="font-default text-lg ml-2 text-gray-500 group-hover:text-green-400">https://github.com/fessehaye</span>
+        </a>
     </section>
-{% endfor %}
 
-<h2 class="text-white text-3xl uppercase font-Mada py-4 mt-6 px-2">Skills</h2>
+    <article id="work" class="col-start-2 row-span-4">
+        <h2 class="flex text-white text-3xl uppercase font-Mada py-4 mt-6 px-2 lg:mt-0 lg:pt-0">
+            <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
+            </svg>
+            Work Experience
+        </h2>
 
-<section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-6">
-    {% for name, skills in resume.skills %}
-        <article class="mb-10">
-            <p class="font-Mada text-xl font-black mb-4 leading-4 text-gray-900 uppercase tracking-wide">{{name}}</p>
+        {% for job in resume.history %}
+            <section class="bg-white shadow-lg lg:shadow-2xl rounded-lg text-gray-600 px-5 py-5 mb-8 lg:mb-12 lg:flex">
+                <div class="flex-shrink-0">
+                    {% if job.logo %}
+                        <img src="{{job.logo}}" alt="company-log" class="w-20 h-20 mb-4 mr-8 object-cover"/>
+                    {% else %}
+                        <svg class="w-20 h-20 mb-4 mr-8 text-indigo-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                            <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
+                        </svg>
+                    {% endif %}
+                </div>
+                <div>
+                    <a href="{{job.companySite}}" target="_blank" rel="noopener noreferrer" class="font-Mada text-xl font-black mb-4 leading-6 text-gray-900 hover:text-green-400 transition">{{job.company}}</a>
+                    <p class="font-Mada text-xl font-black mb-1 leading-tight text-gray-500">{{job.title}}</p>
+                    <p class="font-default text-lg mb-2 text-gray-500">{{job.startDate}} - {{job.endDate}}</p>
+                    <p class="font-default text-md mb-4 mt-4 leading-normal">{{job.description}}</p>
+                    <ul class="list-disc pl-4">
+                        {% for detail in job.details %}
+                            <li class="mb-2 text-md leading-tight">{{detail}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
 
-            <div class="flex flex-wrap w-100 justify-start">
-                {% for skill in skills %}
-                    <span class="mb-2 mr-4 text-md leading-tight uppercase tracking-wider text-white bg-indigo-600 p-2 rounded-lg shadow-md font-Mada">{{skill}}</span>
-                {% endfor %}
-            </div>
-        </article>
-    {% endfor %}
-</section>
-
-<h2 class="text-white text-3xl uppercase font-Mada py-4 mt-6 px-2">Education</h2>
-
-<section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-6">
-    <article class="mb-10">
-        <p class="font-Mada text-xl font-black mb-2 leading-4 text-gray-900 tracking-wide">Specialization in Computing Science, Bachelor,  University of Alberta</p>
-        <p class="font-default text-lg mb-6 text-gray-500">Sept 2010 - Sept 2015</p>
-        <div class="flex flex-wrap w-100 justify-start">
-            {% for course in resume.courses %}
-                <span class="mb-2 mr-4 text-md leading-tight uppercase tracking-wider text-white bg-indigo-600 p-2 rounded-lg shadow-md font-Mada">{{course}}</span>
-            {% endfor %}
-        </div>
+            </section>
+        {% endfor %}
     </article>
-</section>
 
-<h2 class="text-white text-3xl uppercase font-Mada py-4 mt-6 px-2">Volunteer Work</h2>
+    <article id="skill" class="col-start-1">
+        <h2 class="flex text-white text-3xl uppercase font-Mada py-4 mt-6 px-2 lg:mt-0">
+            <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
+            </svg>
+            Skills
+        </h2>
 
-{% for volunteer in resume.volunteers %}
-    <section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-8">
-        <div>
-            <p class="font-Mada text-xl font-black mb-4 leading-6 text-gray-900">{{volunteer.group}}</p>
-            <p class="font-Mada text-xl font-black mb-1 leading-tight text-gray-500">{{volunteer.title}}</p>
-            <p class="font-default text-lg mb-2 text-gray-500">{{volunteer.startDate}} - {{volunteer.endDate}}</p>
-            <p class="font-default text-lg mb-6 mt-6 leading-normal">{{volunteer.description}}</p>
-            <ul class="list-disc pl-4">
-                {% for detail in volunteer.details %}
-                    <li class="mb-2 text-md leading-tight">{{detail}}</li>
-                {% endfor %}
-            </ul>
-        </div>
+        <section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-6">
+            {% for name, skills in resume.skills %}
+                <article class="mb-10">
+                    <p class="font-Mada text-xl font-black mb-4 leading-4 text-gray-900 uppercase tracking-wide">{{name}}</p>
 
-    </section>
-{% endfor %}
+                    <div class="flex flex-wrap w-100 justify-start">
+                        {% for skill in skills %}
+                            <span class="mb-2 mr-4 text-md leading-tight uppercase tracking-wider text-white bg-indigo-600 p-2 rounded-lg shadow-md font-Mada">{{skill}}</span>
+                        {% endfor %}
+                    </div>
+                </article>
+            {% endfor %}
+        </section>
+    </article>
+
+    <article id="education" class="col-start-1">
+        <h2 class="flex text-white text-3xl uppercase font-Mada py-4 mt-6 px-2 lg:mt-0">
+            <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+            </svg>
+            Education
+        </h2>
+
+        <section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-6">
+            <article class="mb-10">
+                <p class="font-Mada text-xl font-black mb-2 leading-4 text-gray-900 tracking-wide">Specialization in Computing Science, Bachelor,  University of Alberta</p>
+                <p class="font-default text-lg mb-6 text-gray-500">Sept 2010 - Sept 2015</p>
+                <div class="flex flex-wrap w-100 justify-start">
+                    {% for course in resume.courses %}
+                        <span class="mb-2 mr-4 text-md leading-tight uppercase tracking-wider text-white bg-indigo-600 p-2 rounded-lg shadow-md font-Mada">{{course}}</span>
+                    {% endfor %}
+                </div>
+            </article>
+        </section>
+    </article>
+
+    <article id="volunteer" class="col-start-1">
+        <h2 class="flex text-white text-3xl uppercase font-Mada py-4 mt-6 lg:mt-0 px-2">
+            <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+            </svg>
+            Volunteer Work
+        </h2>
+
+        {% for volunteer in resume.volunteers %}
+            <section class="bg-white shadow-lg rounded-lg text-gray-600 px-5 py-5 mb-8">
+                <div>
+                    <p class="font-Mada text-xl font-black mb-4 leading-6 text-gray-900">{{volunteer.group}}</p>
+                    <p class="font-Mada text-xl font-black mb-1 leading-tight text-gray-500">{{volunteer.title}}</p>
+                    <p class="font-default text-lg mb-2 text-gray-500">{{volunteer.startDate}} - {{volunteer.endDate}}</p>
+                    <p class="font-default text-lg mb-6 mt-6 leading-normal">{{volunteer.description}}</p>
+                    <ul class="list-disc pl-4">
+                        {% for detail in volunteer.details %}
+                            <li class="mb-2 text-md leading-tight">{{detail}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </section>
+        {% endfor %}
+    </article>
+
+</div>

@@ -3,40 +3,40 @@
         "Javascript",
         "Python",
         "HTML5/CSS",
-        "PHP",
-        "Perl",
-        "Matlab/Octave",
         "C#",
         "Java",
-        "Swift"
+        "Swift",
+        "PHP",
+        "Perl",
+        "Matlab/Octave"
     ],
     "frameworks/libraries": [
+        "React",
+        "Vue",
+        "NodeJS",
+        "Greensock",
+        "Typescript",
+        "Sass",
+        "Electron",
+        "Eleventy",
         "Django",
         "Flask",
         "Bootstrap/TailwindCSS",
         "AngularJS",
-        "NodeJS",
         "Symfony",
         "Codeigniter",
         "ASP.NET Core",
-        "React",
         "Redux",
-        "Sass",
-        "Vue",
         "Gatsby",
-        "NextJS",
-        "Electron",
-        "Typescript",
-        "Greensock",
-        "Eleventy"
+        "NextJS"
     ],
     "databases": [
         "GraphQL",
+        "PostgreSQL",
+        "MongoDB",
         "Oracle",
         "SQLite",
         "MySQL",
-        "MongoDB",
-        "PostgreSQL",
         "PouchDB/CouchDB",
         "Microsoft SQL Server"
     ],
@@ -44,6 +44,7 @@
         "Netlify",
         "Figma",
         "Xcode",
-        "Chrome Extensions"
+        "Chrome Extension API",
+        "Serverless Functions"
     ]
 }
