@@ -1,4 +1,5 @@
 ;(function () {
+  document.body.classList.remove("hidden")
   const tl = gsap.timeline({ paused: true })
 
   tl.from("nav", {
