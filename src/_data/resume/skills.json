@@ -45,6 +45,8 @@
         "Figma",
         "Xcode",
         "Chrome Extension API",
-        "Serverless Functions"
+        "Serverless Functions",
+        "Fastlane",
+        "Github Actions"
     ]
 }
