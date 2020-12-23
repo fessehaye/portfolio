@@ -138,6 +138,7 @@
       tl.to(".hero-content", {
         opacity: 0,
         duration: 0.3,
+        clearProps: "all",
       })
       const allCircles = Array.from(
         document.querySelectorAll(".circle-bg > g > circle")
@@ -154,12 +155,14 @@
         opacity: 0,
         scale: 0,
         duration: 0.5,
+        clearProps: "all",
       })
 
       tl.to(randomCircle, {
         scale: 100,
         duration: 0.5,
         opacity: 100,
+        clearProps: "all",
         fill: "#6366F1",
         onComplete: () => {
           window.location.href = event.target.href
