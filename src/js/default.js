@@ -32,8 +32,6 @@
   })
 
   document.querySelector("#nav").addEventListener("click", event => {
-    //document.querySelector("#nav-item").classList.remove("hidden")
-
     if (document.querySelector("#open").classList.contains("hidden")) {
       document.querySelector("#open").classList.remove("hidden")
     } else {
@@ -84,4 +82,46 @@
   document.querySelector(".mobile-close").addEventListener("click", event => {
     tl_mobile.reverse(0)
   })
+
+  document.querySelector(".home-link").addEventListener("click", event => {
+    event.preventDefault()
+
+    let tl_page = gsap.timeline({ paused: true })
+    const mediaQuery = window.matchMedia("(min-width: 1280px)")
+
+    tl_page.to("main,nav", {
+      duration: 0.3,
+      opacity: 0,
+    })
+
+    tl_page.to("body > div", {
+      duration: mediaQuery.matches ? 0.3 : 0,
+      background: mediaQuery.matches ? "#ffffff" : "#6366F1",
+      onComplete: () => {
+        window.location.href = event.target.href
+      },
+    })
+
+    tl_page.play()
+  })
+
+  const allLinks = document.querySelectorAll(".mobile-nav,.nav-ref")
+
+  for (const link of allLinks) {
+    link.addEventListener("click", event => {
+      event.preventDefault()
+
+      let tl_page = gsap.timeline({ paused: true })
+
+      tl_page.to("main > div > *,nav", {
+        duration: 0.5,
+        opacity: 0,
+        onComplete: () => {
+          window.location.href = event.target.href
+        },
+      })
+
+      tl_page.play()
+    })
+  }
 })()
