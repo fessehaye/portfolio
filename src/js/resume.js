@@ -92,13 +92,11 @@
     tl_page.to("main,nav", {
       duration: 0.3,
       opacity: 0,
-      clearProps: "all",
     })
 
     tl_page.to("body > div", {
       duration: mediaQuery.matches ? 0.3 : 0,
       background: mediaQuery.matches ? "#ffffff" : "#6366F1",
-      clearProps: "all",
       onComplete: () => {
         window.location.href = event.target.href
       },
@@ -118,7 +116,6 @@
       tl_page.to("main > div > *,nav", {
         duration: 0.5,
         opacity: 0,
-        clearProps: "all",
         onComplete: () => {
           window.location.href = event.target.href
         },
