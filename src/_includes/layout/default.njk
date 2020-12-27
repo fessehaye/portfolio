@@ -30,6 +30,7 @@
             {% include "../components/_nav.njk" %}
             {% include "../components/_hero-mobile-nav.njk" %}
             <main class="px-5 py-5">{{ content | safe }}</main>
+            {% include "../components/_footer.njk" %}
         </div>
         {% block js %}{% endblock %}
     </body>
