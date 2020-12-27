@@ -1,4 +1,5 @@
 ;(function () {
+  window.addEventListener("unload", function () {})
   document.body.classList.remove("hidden")
   const tl = gsap.timeline({ paused: true })
 
