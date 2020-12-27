@@ -1,8 +1,7 @@
 ;(function () {
-  window.addEventListener("unload", function () {})
   document.body.classList.remove("hidden")
 
-  const bgAdmin = gsap.fromTo(
+  let bgAdmin = gsap.fromTo(
     ".circle-bg > g > circle",
     {
       opacity: 0,
@@ -130,34 +129,70 @@
     ".mobile-nav,.nav-ref,.swipe-hover"
   )
 
+  let tl_exit
+
+  window.addEventListener("pagehide", function (event) {
+    if (event.persisted === true && tl_exit) {
+      tl_exit.seek(0)
+      tl_exit.pause()
+
+      bgAdmin = gsap.fromTo(
+        ".circle-bg > g > circle",
+        {
+          opacity: 0,
+          scale: 0.1,
+          transformOrigin: "center",
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 5,
+          transformOrigin: "center",
+          ease: "slow(0.7, 0.7, false)",
+          paused: true,
+          stagger: {
+            grid: "auto",
+            from: "random",
+            amount: 10,
+            repeat: -1,
+            yoyo: true,
+            ease: "power3.inOut",
+          },
+        }
+      )
+
+      bgAdmin.play()
+    }
+  })
+
   for (const link of allLinks) {
     link.addEventListener("click", event => {
       event.preventDefault()
       bgAdmin.kill()
-      let tl = gsap.timeline({ paused: true })
+      tl_exit = gsap.timeline({ paused: true })
 
-      tl.to(".hero-content", {
+      tl_exit.to(".hero-content", {
         opacity: 0,
         duration: 0.3,
       })
       const allCircles = Array.from(
         document.querySelectorAll(".circle-bg > g > circle")
       )
-      const bigCicles = allCircles.filter(
+      const bigCircles = allCircles.filter(
         c => c.attributes.r.nodeValue === "43.89"
       )
-      const randIndex = Math.floor(Math.random() * bigCicles.length)
-      const randomCircle = bigCicles[randIndex]
+      const randIndex = Math.floor(Math.random() * bigCircles.length)
+      const randomCircle = bigCircles[randIndex]
 
-      const restCicles = allCircles.filter(c => c !== randomCircle)
+      const restCircles = allCircles.filter(c => c !== randomCircle)
 
-      tl.to(restCicles, {
+      tl_exit.to(restCircles, {
         opacity: 0,
         scale: 0,
         duration: 0.5,
       })
 
-      tl.to(randomCircle, {
+      tl_exit.to(randomCircle, {
         scale: 100,
         duration: 0.5,
         opacity: 100,
@@ -167,7 +202,7 @@
         },
       })
 
-      tl.play()
+      tl_exit.play()
     })
   }
 })()
