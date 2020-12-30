@@ -20,11 +20,13 @@
         <meta property="twitter:title" content="Simon Fessehaye's Personal Website">
         <meta property="twitter:description" content="Hey, my name is Simon! I am a Front End Developer living in Edmonton, Alberta.">
         <meta property="twitter:image" content="/img/current.png">
-
+        <meta name="theme-color" content="#5a67d8"/>
         <meta name="author" content="{{site.author}}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Mada:wght@700&family=Overlock:wght@900&family=Proza+Libre&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="manifest" href="manifest.json">
+        <link rel="apple-touch-icon" href="/img/icons/icon-192x192.png">
     </head>
     <body class="">
         <div class="w-full min-h-screen xl:h-screen relative">
@@ -33,6 +35,12 @@
                 {{ content | safe }}
             </div>
         </div>
+        <script>
+            if ("serviceWorker" in navigator) 
+                navigator
+                    .serviceWorker
+                    .register("/service-worker.js");
+        </script>
         <script defer="async">
             document
                 .body
