@@ -10,7 +10,7 @@
     ease: "power2.inOut",
   })
 
-  tl.from("main > div > *", {
+  tl.from("article", {
     opacity: 0,
     translateY: -20,
     duration: 0.3,
@@ -21,31 +21,6 @@
   })
 
   tl.play()
-
-  const tl_nav = gsap.timeline({ paused: true })
-
-  tl_nav.to("#nav-item", {
-    scale: 1,
-    duration: 0.3,
-    transformOrigin: "right bottom",
-    ease: "power2.inOut",
-  })
-
-  document.querySelector("#nav").addEventListener("click", event => {
-    if (document.querySelector("#open").classList.contains("hidden")) {
-      document.querySelector("#open").classList.remove("hidden")
-    } else {
-      document.querySelector("#open").classList.add("hidden")
-    }
-
-    if (document.querySelector("#close").classList.contains("hidden")) {
-      document.querySelector("#close").classList.remove("hidden")
-      tl_nav.play(0)
-    } else {
-      document.querySelector("#close").classList.add("hidden")
-      tl_nav.reverse(0)
-    }
-  })
 
   const tl_mobile = gsap.timeline({ paused: true })
 
@@ -129,7 +104,7 @@
 
       tl_page_other = gsap.timeline({ paused: true })
 
-      tl_page_other.to("main > div > *,nav", {
+      tl_page_other.to("article,nav", {
         duration: 0.5,
         opacity: 0,
         onComplete: () => {
