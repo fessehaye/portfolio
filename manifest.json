@@ -10,6 +10,11 @@
     "short_name": "Simon",
     "icons": [
         {
+            "src": "/img/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
             "src": "/img/icons/maskable_icon.png",
             "sizes": "192x192",
             "type": "image/png",
