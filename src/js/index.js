@@ -37,6 +37,7 @@
       duration: mediaQuery.matches ? 0.5 : 0,
       delay: 0.5,
       transformOrigin: "center",
+      clearProps: "opacity",
     })
   }
 
