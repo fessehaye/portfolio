@@ -3,11 +3,13 @@ const pluginTailwindCSS = require("eleventy-plugin-tailwindcss")
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginTailwindCSS)
-  eleventyConfig.addPlugin(pluginPWA)
+  if (process.env.NODE_ENV === "production") {
+    eleventyConfig.addPlugin(pluginPWA)
+    eleventyConfig.addPassthroughCopy("manifest.json")
+  }
 
   eleventyConfig.addPassthroughCopy("src/img")
   eleventyConfig.addPassthroughCopy("src/js")
-  eleventyConfig.addPassthroughCopy("manifest.json")
 
   return {
     dir: {
