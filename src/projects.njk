@@ -17,7 +17,7 @@ layout: layout/default.njk
         {%- for project in collections.projects | reverse -%}
             <article class="bg-white text-gray-700 rounded-lg shadow-lg flex flex-col">
                 <div class=" min-h-1/3 lg:h-1/2">
-                    <img class="w-full h-full object-scale-down lg:object-cover lg:object-right-top bg-indigo-200 rounded-t-lg" src="{{project.data.preview }}" alt="project-pic">
+                    <img class="w-full h-full object-scale-down lg:object-cover lg:object-left bg-indigo-200 rounded-t-lg" src="{{project.data.preview }}" alt="project-pic">
                 </div>
                 <div class="lg:h-1/2 flex-auto px-10 py-8 border-t-2 border-gray-600 flex flex-col">
                     <div class="flex-auto">
