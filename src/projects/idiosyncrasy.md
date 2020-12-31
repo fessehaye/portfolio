@@ -5,6 +5,7 @@ demo: http://idiosyncrasy.surge.sh
 preview: /img/projects/idiosyncrasy.png
 description: Web based game for game gallery exhibition
 keywords: ["SPA", "Game", "Print Media Queries", "KnockoutJS", "ThreeJS"]
+date: 2017-01-01
 ---
 
 demo available at [http://idiosyncrasy.surge.sh/](http://idiosyncrasy.surge.sh/)
