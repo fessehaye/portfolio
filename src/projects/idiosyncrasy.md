@@ -4,7 +4,7 @@ repo: https://github.com/fessehaye/idiosyncrasy
 demo: http://idiosyncrasy.surge.sh
 preview: /img/projects/idiosyncrasy.png
 description: Web based game for game gallery exhibition
-keywords: ["SPA", "Game", "Media Queries", "KnockoutJS"]
+keywords: ["SPA", "Game", "Print Media Queries", "KnockoutJS", "ThreeJS"]
 ---
 
 demo available at [http://idiosyncrasy.surge.sh/](http://idiosyncrasy.surge.sh/)
