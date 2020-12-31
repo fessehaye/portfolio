@@ -11,14 +11,14 @@
     {
       opacity: 1,
       scale: 1,
-      duration: 5,
+      duration: 3,
       transformOrigin: "center",
       ease: "slow(0.7, 0.7, false)",
       paused: true,
       stagger: {
         grid: "auto",
         from: "random",
-        amount: 10,
+        amount: 50,
         repeat: -1,
         yoyo: true,
         ease: "power3.inOut",
@@ -147,14 +147,14 @@
         {
           opacity: 1,
           scale: 1,
-          duration: 5,
+          duration: 3,
           transformOrigin: "center",
           ease: "slow(0.7, 0.7, false)",
           paused: true,
           stagger: {
             grid: "auto",
             from: "random",
-            amount: 10,
+            amount: 50,
             repeat: -1,
             yoyo: true,
             ease: "power3.inOut",
