@@ -23,7 +23,10 @@
         <meta name="theme-color" content="#5a67d8"/>
         <meta name="author" content="{{site.author}}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Mada:wght@700&family=Overlock:wght@900&family=Proza+Libre&display=swap" rel="stylesheet">
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Mada:wght@700&family=Overlock:wght@900&family=Proza+Libre&display=swap">
+
+        <!-- async CSS -->
+        <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Mada:wght@700&family=Overlock:wght@900&family=Proza+Libre&display=swap">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="manifest" href="manifest.json">
         <link rel="apple-touch-icon" href="/img/icons/icon-192x192.png">
