@@ -70,12 +70,16 @@ layout: layout/default.njk
             .classList
             .add("hidden");
     </script>
-    <script>
-        if ("serviceWorker" in navigator) 
-            navigator
-                .serviceWorker
-                .register("/service-worker.js");
-    </script>
-    <script defer="async" src="/js/gsap.min.js"></script>
+
+    <script defer="async" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script defer="async" src="/js/projects.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator
+                    .serviceWorker
+                    .register('/service-worker.js');
+            });
+        }
+    </script>
 {% endblock %}
