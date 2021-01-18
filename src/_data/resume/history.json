@@ -6,11 +6,12 @@
     "startDate": "Sept 2018",
     "endDate": "Present",
     "title": "Web Developer/Game Developer",
-    "description": "Full-time position. Worked on the web based game, “Axis & Allies 1942 Online”",
+    "description": "Full-time position. Participated in the full development lifecycle on the web-based game, “Axis & Allies 1942 Online”",
     "details": [
-      "Used web technology like Sass, Typescript and React to create UI components for an online video game",
-      "Implementing mockups and wireframes from designers to recreate common game views like main menus and player profiles",
-      "Automate iOS builds using Fastlane and Github Actions"
+      "Use web technology like Sass, Typescript and React to create UI components for online video game",
+      "Implement mockups and wireframes from designers to recreate common game views like main menus and player profiles",
+      "Automate iOS builds using Fastlane and Github Actions",
+      "Updating Confluence  documentation for existing codebase"
     ]
   },
   {
@@ -20,9 +21,10 @@
     "startDate": "Feb 2018",
     "endDate": "Aug 2018",
     "title": "Web Developer",
-    "description": "Full-time position. Working on web applications for educational games",
+    "description": "A full-time position that provides software development for online educational games",
     "details": [
-      "Doing frontend development and design tasks on mathgames.com including implementing membership forms and report cards"
+      "Collaborated with backend developers to add membership features including report cards and subscription landing pages",
+      "Created mockups using Figma/Adobe Illustrator for rapid prototyping"
     ]
   },
   {
@@ -42,7 +44,7 @@
   {
     "company": "University of Alberta/Fouad Lab",
     "companySite": "http://www.rehabresearch.ualberta.ca/karimfouad/",
-    "logo": "https://scontent.fyxd2-1.fna.fbcdn.net/v/t1.0-9/101563301_10157321470135677_6711558558086856704_n.jpg?_nc_cat=109&ccb=2&_nc_sid=174925&_nc_ohc=5YMqGpWisVcAX9jaNTM&_nc_oc=AQkJzlSFKJU2xZ6i5nwnwZhrQKH3dD0nl40V2n8MeSiQoej7E3_rvqlRLxEKq8uYRt1BoXlgW_YsXuHZ-Rmbv14G&_nc_ht=scontent.fyxd2-1.fna&oh=6991486e648cbc42b454fdd790a7be5c&oe=6004D48E",
+    "logo": "/img/uofa.png",
     "startDate": "April 2016",
     "endDate": "Sept 2016",
     "title": "Programmer",
@@ -80,7 +82,7 @@
   {
     "company": "University Of Alberta/Faculty of Business",
     "companySite": "https://www.ualberta.ca/index.html",
-    "logo": "https://scontent.fyxd2-1.fna.fbcdn.net/v/t1.0-9/101563301_10157321470135677_6711558558086856704_n.jpg?_nc_cat=109&ccb=2&_nc_sid=174925&_nc_ohc=5YMqGpWisVcAX9jaNTM&_nc_oc=AQkJzlSFKJU2xZ6i5nwnwZhrQKH3dD0nl40V2n8MeSiQoej7E3_rvqlRLxEKq8uYRt1BoXlgW_YsXuHZ-Rmbv14G&_nc_ht=scontent.fyxd2-1.fna&oh=6991486e648cbc42b454fdd790a7be5c&oe=6004D48E",
+    "logo": "/img/uofa.png",
     "startDate": "Nov 2014",
     "endDate": "Apr 2015",
     "title": "Internet Design and Programming Assistant",
@@ -93,7 +95,7 @@
   {
     "company": "University of Alberta/Technical Support Team",
     "companySite": "https://uofa.ualberta.ca/computing-science/links-and-resources/technical-support",
-    "logo": "https://scontent.fyxd2-1.fna.fbcdn.net/v/t1.0-9/101563301_10157321470135677_6711558558086856704_n.jpg?_nc_cat=109&ccb=2&_nc_sid=174925&_nc_ohc=5YMqGpWisVcAX9jaNTM&_nc_oc=AQkJzlSFKJU2xZ6i5nwnwZhrQKH3dD0nl40V2n8MeSiQoej7E3_rvqlRLxEKq8uYRt1BoXlgW_YsXuHZ-Rmbv14G&_nc_ht=scontent.fyxd2-1.fna&oh=6991486e648cbc42b454fdd790a7be5c&oe=6004D48E",
+    "logo": "/img/uofa.png",
     "startDate": "May 2013",
     "endDate": "July 2014",
     "title": "Helpdesk Consultant",
