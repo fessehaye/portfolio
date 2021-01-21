@@ -2,7 +2,7 @@
   {
     "company": "Beamdog",
     "companySite": "https://www.beamdog.com/",
-    "logo": "https://pbs.twimg.com/profile_images/876851514823761922/RiyxJevH_400x400.jpg",
+    "logo": "/img/beamdog.jpg",
     "startDate": "Sept 2018",
     "endDate": "Present",
     "title": "Web Developer/Game Developer",
@@ -17,7 +17,7 @@
   {
     "company": "TeachMe",
     "companySite": "https://www.teachme.com/",
-    "logo": "https://pbs.twimg.com/profile_images/856922381356584960/h2zoiNAV_400x400.jpg",
+    "logo": "/img/teach.jpg",
     "startDate": "Feb 2018",
     "endDate": "Aug 2018",
     "title": "Web Developer",
@@ -30,7 +30,7 @@
   {
     "company": "Iomer Internet Solutions",
     "companySite": "https://www.iomer.com",
-    "logo": "https://scontent.fyxd2-1.fna.fbcdn.net/v/t1.0-9/11214357_1076134092397263_8785389488918997060_n.png?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=uHlbKQDrrpsAX95sMf5&_nc_ht=scontent.fyxd2-1.fna&oh=a1951b7438b4f52dce463658fc6fee6f&oe=6006AE4D",
+    "logo": "/img/iomer.png",
     "startDate": "Sept 2016",
     "endDate": "Feb 2018",
     "title": "Junior Consultant,Solution Developer",
@@ -58,7 +58,7 @@
   {
     "company": "Four Winds & Associates Inc.",
     "companySite": "http://www.fourwinds.ca/",
-    "logo": "https://static.wixstatic.com/media/10af7d_67746252ef414e1da25ca4db063c9e9a~mv2.jpg/v1/fill/w_380,h_322,al_c,q_80,usm_0.66_1.00_0.01/New%20logo%20to%20use%2011.webp",
+    "logo": "/img/four.png",
     "startDate": "June 2015",
     "endDate": "Nov 2016",
     "title": "Junior Web Developer",
