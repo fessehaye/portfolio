@@ -1,0 +1,117 @@
+[
+    {
+        "title": "New Personal Website!",
+        "repo": "https://github.com/fessehaye/portfolio",
+        "demo": "https://fessehaye.netlify.app/",
+        "preview": "/img/current.png",
+        "description": "The site that you are looking at!",
+        "keywords": [
+            "Eleventy",
+            "Greensock",
+            "Tailwind",
+            "PWA"
+        ]
+    },
+    {
+        "title": "Smash Timer",
+        "repo": "https://github.com/fessehaye/smash-timer",
+        "demo": "https://smash-timer.netlify.app",
+        "preview": "/img/projects/timer.png",
+        "description": "Metronome app to figure out the timing of inputs in fighting games.",
+        "keywords": [
+            "Web Audio",
+            "React",
+            "Typescript"
+        ]
+    },
+    {
+        "title": "Results Thread Generator",
+        "repo": "https://github.com/fessehaye/Results-thread-figma",
+        "demo": null,
+        "preview": "/img/projects/results.png",
+        "description": "Figma file to generate result graphics for weekly tournament results",
+        "keywords": [
+            "Figma"
+        ]
+    },
+    {
+        "title": "Slp-recorder",
+        "repo": "https://github.com/fessehaye/SlpTOTools",
+        "demo": "https://www.npmjs.com/package/slp-recorder",
+        "preview": "/img/projects/cli.png",
+        "description": "CLI Tools for converting replay game states to video files",
+        "keywords": [
+            "CLI",
+            "GraphQL",
+            "Open Broadcaster Software",
+            "Slippi",
+            "NodeJS"
+        ]
+    },
+    {
+        "title": "Can I Play Yet",
+        "repo": "https://github.com/fessehaye/CanIPlayYet",
+        "demo": "https://caniplay.fun",
+        "preview": "/img/projects/CanIplay.png",
+        "description": "A site to indicate whether you can play friendlies/casual games during the tournament with remaining setups.",
+        "keywords": [
+            "NextJS",
+            "Netlify",
+            "Serverless Functions",
+            "TailwindCSS",
+            "React Hooks"
+        ]
+    },
+    {
+        "title": "Alberta Smash Documentation Site",
+        "repo": "https://github.com/fessehaye/ABSmash-Docs",
+        "demo": "https://abdocs.netlify.app/",
+        "preview": "/img/projects/docs.png",
+        "description": "Documentation for the Alberta Smash Group",
+        "keywords": [
+            "VuePress",
+            "VueJS",
+            "Netlify CMS"
+        ]
+    },
+    {
+        "title": "Smash Calendar Extension",
+        "repo": "https://github.com/fessehaye/Smash-Calendar-Extension",
+        "demo": "https://chrome.google.com/webstore/detail/smash-mini-calendar/phgeahccdaffidkpeheameakleoahbji?hl=en",
+        "preview": "/img/projects/calendar.jpg",
+        "description": "Chrome Extension bookmark smash.gg events for future use",
+        "keywords": [
+            "Chrome Extension",
+            "VueJS",
+            "Bulma",
+            "Rest API"
+        ]
+    },
+    {
+        "title": "Edmonton Smash Website",
+        "repo": "https://github.com/fessehaye/ABsmash",
+        "demo": "https://nostalgic-mccarthy-a529a9.netlify.app",
+        "preview": "/img/projects/ABSmash.png",
+        "description": "Public site for the Edmonton smash group",
+        "keywords": [
+            "React",
+            "Public Site",
+            "Bootstrap",
+            "Airtable"
+        ]
+    },
+    {
+        "title": "Idiosyncrasy",
+        "repo": "https://github.com/fessehaye/idiosyncrasy",
+        "demo": "http://idiosyncrasy.surge.sh",
+        "preview": "/img/projects/idiosyncrasy.png",
+        "description": "Web based game for game gallery exhibition.",
+        "keywords": [
+            "SPA",
+            "Game",
+            "Print Media Queries",
+            "KnockoutJS",
+            "ThreeJS"
+        ]
+    }
+]

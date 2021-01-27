@@ -20,7 +20,7 @@ layout: layout/default.njk
 
     <div class="grid w-full gap-16 grid-flow-row auto-rows-max lg:grid-cols-2 lg:auto-rows-fr">
 
-        {%- for project in collections.projects | reverse -%}
+        {%- for project in data.projects -%}
             <article class="bg-white text-gray-700 rounded-lg shadow-lg flex flex-col">
                 <div class=" min-h-1/3 lg:h-1/2">
                     <img class="w-full h-full object-scale-down bg-indigo-200 rounded-t-lg" src="{{project.data.preview }}" alt="project-pic">
