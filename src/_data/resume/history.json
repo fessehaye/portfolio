@@ -1,10 +1,20 @@
 [
   {
+    "company": "Mozilla",
+    "companySite": "https://foundation.mozilla.org/en/",
+    "logo": "/img/mozilla.png",
+    "startDate": "June 2021",
+    "endDate": "Present",
+    "title": "Front End Developer",
+    "description": "Full-time position.",
+    "details": []
+  },
+  {
     "company": "Beamdog",
     "companySite": "https://www.beamdog.com/",
     "logo": "/img/beamdog.jpg",
     "startDate": "Sept 2018",
-    "endDate": "Present",
+    "endDate": "June 2021",
     "title": "Web Developer/Game Developer",
     "description": "Full-time position. Participated in the full development lifecycle on the web-based game, “Axis & Allies 1942 Online”",
     "details": [
