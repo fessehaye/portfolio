@@ -1,5 +1,17 @@
 [
     {
+        "title": "BC Smash Events",
+        "repo": "https://github.com/fessehaye/BC-Smash-Events",
+        "demo": "https://bcsmash.ca/",
+        "preview": "/img/projects/bc.png",
+        "description": "View the latest BC smash events for Melee, Ultimate and P+",
+        "keywords": [
+            "Astro",
+            "Tailwind",
+            "PWA"
+        ]
+    },
+    {
         "title": "New Personal Website!",
         "repo": "https://github.com/fessehaye/portfolio",
         "demo": "https://fessehaye.netlify.app/",
