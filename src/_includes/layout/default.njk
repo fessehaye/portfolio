@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="bg-indigo-500" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,8 +31,11 @@
         <link rel="stylesheet" href="/css/main.css">
         <link rel="manifest" href="/manifest.json">
         <link rel="apple-touch-icon" href="/img/icons/icon-192x192.png">
+        <noscript>
+            <style>body.hidden{display:block !important}</style>
+        </noscript>
     </head>
-    <body class="">
+    <body class="hidden">
         <div class="bg-indigo-500 w-full min-h-screen text-white font-default">
             {% include "../components/_nav.njk" %}
             {% include "../components/_hero-mobile-nav.njk" %}
