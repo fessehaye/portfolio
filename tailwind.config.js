@@ -1,14 +1,8 @@
 const colors = require("tailwindcss/colors")
 
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: {
-    // enabled: true,
-    content: ["dist/**/*.html", "./src/**/*.njk"],
-  },
+  content: 
+    ["dist/**/*.html", "./src/**/*.njk"],
   theme: {
     extend: {
       colors: {
@@ -16,7 +10,6 @@ module.exports = {
       },
       screens: {
         "3xl": "2100px",
-        // => @media (orientation: portrait) { ... }
       },
     },
     fontFamily: {
