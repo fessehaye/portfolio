@@ -6,8 +6,12 @@
     "startDate": "June 2021",
     "endDate": "Present",
     "title": "Front End Developer",
-    "description": "Full-time position.",
-    "details": []
+    "description": "Full-time position. Joined the Digital Engagement team to help create digital experiences that connect with users on their journey through our web properties. The Digital Engagement team is primarily focused on reaching a wide audience to build a grassroots movement of activists working to improve the open internet.",
+    "details": [
+      "Formalizing our Figma design system in code with JavaScript and React components",
+      "Adding new templates and content types to the Foundation's CMS",
+      "Collaborating with the design team to implement UX/UI improvements"
+    ]
   },
   {
     "company": "Beamdog",
