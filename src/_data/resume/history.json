@@ -1,10 +1,21 @@
 [
   {
+    "company": "UrbanLogiq",
+    "companySite": "https://urbanlogiq.com/",
+    "logo": "",
+    "startDate": "July 2023",
+    "endDate": "Present",
+    "title": "Software Engineer",
+    "description": "",
+    "details": [
+    ]
+  },
+  {
     "company": "Mozilla",
     "companySite": "https://foundation.mozilla.org/en/",
     "logo": "/img/mozilla.png",
     "startDate": "June 2021",
-    "endDate": "Present",
+    "endDate": "March 2023",
     "title": "Front End Developer",
     "description": "Full-time position. Joined the Digital Engagement team to help create digital experiences that connect with users on their journey through our web properties. The Digital Engagement team is primarily focused on reaching a wide audience to build a grassroots movement of activists working to improve the open internet.",
     "details": [
