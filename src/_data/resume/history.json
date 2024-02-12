@@ -2,12 +2,15 @@
   {
     "company": "UrbanLogiq",
     "companySite": "https://urbanlogiq.com/",
-    "logo": "",
+    "logo": "https://pbs.twimg.com/profile_images/1033822284098588672/DDIBaP-w_400x400.jpg",
     "startDate": "July 2023",
     "endDate": "Present",
     "title": "Software Engineer",
-    "description": "",
+    "description": "Full-time position, worked on the web development team to contribute towards data visualization reports for multiple governments across North America.",
     "details": [
+      "Implemented efficient URL routing in the frontend, resulting in more accurate Sentry error reports and a subsequent improvement in overall system stability and user experience.",
+      "Led and facilitated key sprint rituals, including retrospectives and sprint planning, guiding our team of 6 developers through structured sessions that fostered open communication and collaboration. This proactive approach contributed to improved team cohesion.",
+      "Spearheaded the integration of developer-centric tools such as Tailwind CSS and Playwright(end-to-end testing), revolutionizing our development workflow."
     ]
   },
   {
@@ -17,11 +20,12 @@
     "startDate": "June 2021",
     "endDate": "March 2023",
     "title": "Front End Developer",
-    "description": "Full-time position. Joined the Digital Engagement team to help create digital experiences that connect with users on their journey through our web properties. The Digital Engagement team is primarily focused on reaching a wide audience to build a grassroots movement of activists working to improve the open internet.",
+    "description": "Temporary Full-time position. Joined the Digital Engagement team to help create digital experiences that connect with users on their journey through our web properties. The Digital Engagement team is primarily focused on reaching a wide audience to build a grassroots movement of activists working to improve the open internet.",
     "details": [
-      "Formalizing our Figma design system in code with JavaScript and React components",
-      "Adding new templates and content types to the Foundation's CMS",
-      "Collaborating with the design team to implement UX/UI improvements"
+      "Championed the code implementation of the team's Figma design system with JavaScript and React components, resulting in a more streamlined and efficient design process.",
+      "Optimized the Foundation's CMS by adding new templates and content types; facilitated content creation by Mozilla's team of content writers and reduced manual site updates by developers.",
+      "Implemented internal tools to streamline development workflows and increase efficiency.",
+      "Spearheaded the planning and implementation of front-end features for Mozilla's Privacy Not Included site, including client-side routing, state management, and interactive animations."
     ]
   },
   {
@@ -33,10 +37,10 @@
     "title": "Web Developer/Game Developer",
     "description": "Full-time position. Participated in the full development lifecycle on the web-based game, “Axis & Allies 1942 Online”",
     "details": [
-      "Use web technology like Sass, Typescript and React to create UI components for online video game",
-      "Implement mockups and wireframes from designers to recreate common game views like main menus and player profiles",
-      "Automate iOS builds using Fastlane and Github Actions",
-      "Updating Confluence  documentation for existing codebase"
+      "Developed UI components for \"Axis & Allies 1942 Online\" using Sass, TypeScript, and React.",
+      "Transformed designer mockups and wireframes into user-friendly interfaces, such as system menus and user profiles, resulting in a seamless user experience and positive feedback from clients.",
+      "Automated iOS builds using Fastlane and GitHub Actions to improve development efficiency.",
+      "Reorganized React components to better align with industry standards and best practices, resulting in more approachable and intuitive code."
     ]
   },
   {
@@ -48,8 +52,8 @@
     "title": "Web Developer",
     "description": "A full-time position that provides software development for online educational games",
     "details": [
-      "Collaborated with backend developers to add membership features including report cards and subscription landing pages",
-      "Created mockups using Figma/Adobe Illustrator for rapid prototyping"
+      "Collaborated with the back-end team to add subscription-exclusive features for mathgames.com including personalized dashboards and landing pages, increasing the site's revenue.",
+      "Created mockups using Figma and Adobe Illustrator for rapid prototyping."
     ]
   },
   {
@@ -61,9 +65,9 @@
     "title": "Junior Consultant,Solution Developer",
     "description": "Full-time position that provides software development based primarily on the Microsoft platform to multiple clients.",
     "details": [
-      "Collaborate with clients and other team members to plan and conduct large websites and intranets",
+      "Collaborated with designers and project managers to create front-end solutions and branding using Sass and Javascript Libraries (React, AngularJS).",
       "Support solution architecture at both enterprise and project levels using Sharepoint and ASP.Net projects",
-      "Collaborate with designers and project managers to create front-end solutions and branding using Sass and Javascript Libraries (React, AngularJS, Jquery)"
+      "Contributed with the development of websites and intranets for major clients such as Alberta's Liquor Connect, Alberta Motor Association, and Cashco Financial, driving successful outcomes and ensuring client satisfaction."
     ]
   },
   {
@@ -75,8 +79,8 @@
     "title": "Programmer",
     "description": "Temporary Position developing desktop applications to aid a postdoctoral researcher experiments.",
     "details": [
-      "Developing a single page application that can be ported to a desktop application using Electron and Knockout JS",
-      "Develop User-friendly Software that can handle thousands of scientific records within multiple experiments",
+      "Developed a single-page application ported as a desktop application using Electron and Knockout JS to aid postdoctoral researchers' experiments.",
+      "Implemented offline friendly features to parse and store data to save researcher's time when collecting their data.",
       "Creating an offline application that can parse and store the raw data from generated text files"
     ]
   },

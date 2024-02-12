@@ -28,7 +28,10 @@
         "ASP.NET Core",
         "Redux",
         "Gatsby",
-        "NextJS"
+        "NextJS",
+        "Playwright",
+        "Astro",
+        "Wagtail CMS"
     ],
     "databases": [
         "GraphQL",
