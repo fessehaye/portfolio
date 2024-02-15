@@ -1,5 +1,38 @@
 [
     {
+        "title": "Hot Chocolate Festival 2024",
+        "repo": "https://github.com/fessehaye/hot-chocolate-passport",
+        "demo": "https://hot-choco-passport.netlify.app/",
+        "preview": "/img/projects/HotChocolatePassport.png",
+        "description": "Bookmark, Search and record the drinks you are trying for the 2024 greater vancouver hot chocolate festival.",
+        "keywords": [
+            "Astro",
+            "React"
+        ]
+    },
+    {
+        "title": "Bye Ariel",
+        "repo": "https://github.com/fessehaye/bye-ariel",
+        "demo": "https://bye-ariel.netlify.app/",
+        "preview": "/img/projects/goodbye.png",
+        "description": "I had a few days to make a guestbook for our departing co-worker. It is inspired by the Pokemon Diamond ending credits (her favourite pokemon game)",
+        "keywords": [
+            "Astro",
+            "Greensock"
+        ]
+    },
+    {
+        "title": "Hot Chocolate Festival 2023",
+        "repo": "https://github.com/fessehaye/hot-chocolate",
+        "demo": "https://hot-choco-adventure.netlify.app/",
+        "preview": "/img/projects/hotAdventure.png",
+        "description": "Made a site to demo the hot chocolates I tried during the festival. Had fun with scrolltrigger animations!",
+        "keywords": [
+            "Astro",
+            "Greensock"
+        ]
+    },
+    {
         "title": "BC Smash Events",
         "repo": "https://github.com/fessehaye/BC-Smash-Events",
         "demo": "https://bcsmash.ca/",

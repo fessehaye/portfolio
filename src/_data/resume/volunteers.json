@@ -1,5 +1,27 @@
 [
     {
+        "title": "Organizer",
+        "group": "React Vancouver Meetup",
+        "groupSite": "https://www.meetup.com/reactjs-vancouver-meetup/",
+        "startDate": "June 2022",
+        "endDate": "Present",
+        "description": "Acted as one of the leaders for organizing events for our community.",
+        "details": [
+            "Ran social nights at bars and pubs and coordinated reservations with managers.",
+            "Ran tech talks where people talked about Web Dev, React, and React Native."
+        ]
+    },
+    {
+        "title": "Volunteer",
+        "group": "Vancouver Farmers Market",
+        "groupSite": "https://www.meetup.com/reactjs-vancouver-meetup/",
+        "startDate": "May 2022",
+        "endDate": "Present",
+        "description": "Helped staff with minor tasks and teardown of the farmers markets",
+        "details": [
+        ]
+    },
+    {
         "title": "Tournament Organizer",
         "group": "Edmonton Smash Bros Group",
         "groupSite": "https://www.facebook.com/groups/edmontonsmash/",
