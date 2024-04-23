@@ -1,10 +1,20 @@
 [
   {
+    "company": "Vivante Health",
+    "companySite": "https://vivantehealth.com/",
+    "logo": "https://vivantehealth.com/wp-content/uploads/2020/03/logo_150.png",
+    "startDate": "April 2024",
+    "endDate": "Present",
+    "title": "Senior Software Engineer",
+    "description": "",
+    "details": []
+  },
+  {
     "company": "UrbanLogiq",
     "companySite": "https://urbanlogiq.com/",
     "logo": "https://pbs.twimg.com/profile_images/1033822284098588672/DDIBaP-w_400x400.jpg",
     "startDate": "July 2023",
-    "endDate": "Present",
+    "endDate": "April 2024",
     "title": "Senior Software Engineer",
     "description": "Full-time position, worked on the web development team to contribute towards data visualization reports for multiple governments across North America.",
     "details": [
