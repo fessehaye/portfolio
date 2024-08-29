@@ -1,5 +1,16 @@
 [
     {
+        "title": "Website Volunteer",
+        "group": "Vancouver Dodgeball League",
+        "groupSite": "https://vdldodgeball.ca/",
+        "startDate": "May 2024",
+        "endDate": "Present",
+        "description": "Helped update and maintain wordpress public site",
+        "details": [
+            "Updated legacy laravel projects that supported player registrations and schedules"
+        ]
+    },
+    {
         "title": "Organizer",
         "group": "React Vancouver Meetup",
         "groupSite": "https://www.meetup.com/reactjs-vancouver-meetup/",
