@@ -2,5 +2,6 @@
     "title": "Front End Developer",
     "location": "Vancouver, BC",
     "jobRole": "Senior Software Engineer",
-    "job": "Hootsuite"
+    "job": "Hootsuite",
+    "currentRole": false
 }
