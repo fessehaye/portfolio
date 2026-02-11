@@ -19,6 +19,8 @@ components:
       - name: preview
         label: Preview Image
         type: image
+        options:
+          path: src/img/projects/
       - name: description
         label: Description
         type: text
