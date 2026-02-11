@@ -125,7 +125,7 @@ content:
       - name: endDate
         label: End Date
         type: string
-        description: When you ended this position (leave empty if current role)
+        description: When you ended this position (say present if current role)
       - name: title
         label: Job Title
         type: string
@@ -190,7 +190,7 @@ content:
       - name: endDate
         label: End Date
         type: string
-        description: When you ended volunteering (leave empty if ongoing)
+        description: When you ended volunteering (say present if ongoing)
       - name: description
         label: Description
         type: text
