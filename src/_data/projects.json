@@ -2,7 +2,7 @@
   {
     "title": "Hot Chocolate Festival 2025/2026",
     "repo": "https://github.com/fessehaye/hot-choco-2025",
-    "demo": "hot-choco-2026.vercel.app",
+    "demo": "https://hot-choco-2026.vercel.app",
     "preview": "/img/projects/Screenshot 2026-02-11 at 2.05.23 AM.png",
     "description": "Helps you find the closest hot chocolate relative to your location using PostGIS and supabase.",
     "keywords": [
