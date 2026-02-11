@@ -78,6 +78,6 @@ content:
     path: src/_data/projects.json
     list: true
     fields:
-      - name: projects 
+      - name: projectlist
         label: Projects
         component: project
