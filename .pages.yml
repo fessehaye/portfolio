@@ -1,0 +1,48 @@
+# Media configuration: where your images live
+media:
+  input: src/img
+  output: /img
+content:
+  - name: site
+    label: Site Info
+    path: src/_data/site.json
+    type: file
+    fields:
+      - name: author
+        label: author
+        type: string
+      - name: github
+        label: github
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      - name: mail
+        label: mail
+        type: string
+      - name: twitter
+        label: twitter
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      - name: instagram
+        label: instagram
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+  - name: home
+    label: Home Page Info
+    path: src/_data/home.json
+    type: file
+    fields:
+      - name: title
+        label: title
+        type: string
+      - name: location
+        label: location
+        type: string
+      - name: jobRole
+        label: Job Role
+        type: string
+      - name: job
+        label: Job
+        type: string
+      - name: currentRole
+        label: Current Role
+        type: boolean
