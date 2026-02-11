@@ -35,7 +35,8 @@
     "Astro",
     "Wagtail CMS",
     "Jest",
-    "Redux"
+    "Jotai",
+    "Vite"
   ],
   "databases": [
     "GraphQL",
