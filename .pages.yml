@@ -11,21 +11,26 @@ content:
       - name: author
         label: author
         type: string
+        description: The author's name displayed on the site
       - name: github
         label: github
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+        description: Your GitHub profile URL
       - name: mail
         label: mail
         type: string
+        description: Your email address
       - name: twitter
         label: twitter
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+        description: Your Twitter/X profile URL
       - name: instagram
         label: instagram
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+        description: Your Instagram profile URL
   - name: home
     label: Home Page Info
     path: src/_data/home.json
@@ -34,18 +39,23 @@ content:
       - name: title
         label: title
         type: string
+        description: Your professional title or role (e.g., Software Developer, Designer)
       - name: location
         label: location
         type: string
+        description: Your current location (e.g., City, Country)
       - name: jobRole
         label: Job Role
         type: string
+        description: Your current job title or role
       - name: job
         label: Job
         type: string
+        description: The name of the company or organization you work for
       - name: currentRole
         label: Current Role
         type: boolean
+        description: Check if this is your current role, uncheck if it's a previous role
   - name: projects
     label: Projects
     type: file
@@ -55,24 +65,30 @@ content:
       - name: title
         label: Project Title
         type: string
+        description: The name of your project
       - name: repo
         label: GitHub Repository URL
         type: string
+        description: Link to the GitHub repository for this project
       - name: demo
         label: Live Demo URL
         type: string
+        description: Link to the live demo or deployed version of the project
       - name: preview
         label: Preview Image
         type: image
         options:
           path: src/img/projects/
+        description: Preview image displayed for this project
       - name: description
         label: Description
         type: text
+        description: A brief description of what the project does and its key features
       - name: keywords
         label: Technologies / Tags
         type: string
         list: true
+        description: List of technologies, frameworks, or tools used in this project
   - name: courses
     label: Courses
     path: src/_data/resume/courses.json
@@ -82,6 +98,7 @@ content:
       - name: name
         label: Course Name
         type: string
+        description: The full name of the course you completed
   - name: history
     label: Work History
     path: src/_data/resume/history.json
@@ -91,29 +108,37 @@ content:
       - name: company
         label: Company
         type: string
+        description: The name of the company you worked for
       - name: companySite
         label: Company Website
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+        description: The company's website URL
       - name: logo
         label: Logo Image Path
         type: image
+        description: Company logo image to display
       - name: startDate
         label: Start Date
         type: string
+        description: When you started this position (e.g., Jan 2020, Sept 2015)
       - name: endDate
         label: End Date
         type: string
+        description: When you ended this position (leave empty if current role)
       - name: title
         label: Job Title
         type: string
+        description: Your job title or position at this company
       - name: description
         label: Description
         type: text
+        description: A brief overview of your role and responsibilities
       - name: details
         label: Details
         type: string
         list: true
+        description: Additional bullet points highlighting key achievements or responsibilities
   - name: skills
     label: Skills
     path: src/_data/resume/skills.json
@@ -123,18 +148,22 @@ content:
         label: Languages
         type: string
         list: true
+        description: Programming languages you're proficient in
       - name: "frameworks/libraries"
         label: Frameworks/Libraries
         type: string
         list: true
+        description: Frameworks and libraries you have experience with
       - name: databases
         label: Databases
         type: string
         list: true
+        description: Database technologies you're familiar with
       - name: "other experiences"
         label: Other Experiences
         type: string
         list: true
+        description: Other tools, technologies, or skills not covered above
   - name: volunteers
     label: Volunteer Experience
     path: src/_data/resume/volunteers.json
@@ -144,23 +173,30 @@ content:
       - name: title
         label: Title
         type: string
+        description: Your volunteer position or role title
       - name: group
         label: Group/Organization
         type: string
+        description: The name of the organization or group you volunteered with
       - name: groupSite
         label: Group Website
         type: string
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+        description: The organization's website URL
       - name: startDate
         label: Start Date
         type: string
+        description: When you started volunteering (e.g., Jan 2020, Sept 2015)
       - name: endDate
         label: End Date
         type: string
+        description: When you ended volunteering (leave empty if ongoing)
       - name: description
         label: Description
         type: text
+        description: A brief overview of your volunteer role and contributions
       - name: details
         label: Details
         type: string
         list: true
+        description: Additional bullet points highlighting key activities or achievements
