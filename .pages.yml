@@ -2,6 +2,30 @@
 media:
   input: src/img
   output: /img
+components:
+  project:
+    label: Project
+    type: object
+    fields:
+      - name: title
+        label: Project Title
+        type: string
+      - name: repo
+        label: GitHub Repository URL
+        type: string
+      - name: demo
+        label: Live Demo URL
+        type: string
+      - name: preview
+        label: Preview Image
+        type: image
+      - name: description
+        label: Description
+        type: text
+      - name: keywords
+        label: Technologies / Tags
+        type: string
+        list: true
 content:
   - name: site
     label: Site Info
@@ -46,3 +70,13 @@ content:
       - name: currentRole
         label: Current Role
         type: boolean
+  - name: projects
+    label: Projects
+    type: file
+    path: src/_data/projects.json
+    fields:
+      - name: projects 
+        label: Projects
+        component: project
+        list: true
+      
