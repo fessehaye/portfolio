@@ -74,8 +74,8 @@ content:
     label: Projects
     type: file
     path: src/_data/projects.json
+    list: true
     fields:
       - name: projects 
         label: Projects
         component: project
-        list: true
