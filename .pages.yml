@@ -77,26 +77,5 @@ content:
     fields:
       - name: projects 
         label: Projects
-        type: object
+        component: project
         list: true
-        fields:
-        - name: title
-          label: Project Title
-          type: string
-        - name: repo
-          label: GitHub Repository URL
-          type: string
-        - name: demo
-          label: Live Demo URL
-          type: string
-        - name: preview
-          label: Preview Image
-          type: image
-        - name: description
-          label: Description
-          type: text
-        - name: keywords
-          label: Technologies / Tags
-          type: string
-          list: true
-      
