@@ -81,3 +81,94 @@ content:
       - name: projectlist
         label: Projects
         component: project
+  - name: courses
+    label: Courses
+    path: src/_data/resume/courses.json
+    type: file
+    fields:
+      - name: courses
+        label: Courses
+        type: string
+        list: true
+  - name: history
+    label: Work History
+    path: src/_data/resume/history.json
+    type: file
+    list: true
+    fields:
+      - name: company
+        label: Company
+        type: string
+      - name: companySite
+        label: Company Website
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      - name: logo
+        label: Logo Image Path
+        type: string
+      - name: startDate
+        label: Start Date
+        type: string
+      - name: endDate
+        label: End Date
+        type: string
+      - name: title
+        label: Job Title
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: details
+        label: Details
+        type: string
+        list: true
+  - name: skills
+    label: Skills
+    path: src/_data/resume/skills.json
+    type: file
+    fields:
+      - name: languages
+        label: Languages
+        type: string
+        list: true
+      - name: "frameworks/libraries"
+        label: Frameworks/Libraries
+        type: string
+        list: true
+      - name: databases
+        label: Databases
+        type: string
+        list: true
+      - name: "other experiences"
+        label: Other Experiences
+        type: string
+        list: true
+  - name: volunteers
+    label: Volunteer Experience
+    path: src/_data/resume/volunteers.json
+    type: file
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: group
+        label: Group/Organization
+        type: string
+      - name: groupSite
+        label: Group Website
+        type: string
+        pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
+      - name: startDate
+        label: Start Date
+        type: string
+      - name: endDate
+        label: End Date
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: details
+        label: Details
+        type: string
+        list: true
