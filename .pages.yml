@@ -60,10 +60,7 @@ content:
     label: Projects
     type: file
     path: src/_data/projects.json
-    list:
-      collapsible:
-        collapsed: true
-        summary: "{title} ({index})"
+    list: true
     fields:
       - name: title
         label: Project Title
