@@ -1,5 +1,14 @@
 [
   {
+    "title": "Vancouver Dodgeball League",
+    "demo": "https://www.vdldodgeball.ca/",
+    "preview": "/img/projects/vdl.png",
+    "description": "Helped build and deploy the first new VDL site in almost 10 years!",
+    "keywords": [
+      "Wordpress"
+    ]
+  },
+  {
     "title": "Hot Chocolate Festival 2025/2026",
     "repo": "https://github.com/fessehaye/hot-choco-2025",
     "demo": "https://hot-choco-2026.vercel.app",
