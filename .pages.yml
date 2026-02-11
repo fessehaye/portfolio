@@ -78,18 +78,37 @@ content:
     path: src/_data/projects.json
     list: true
     fields:
-      - name: projectlist
-        label: Projects
-        component: project
+      - name: title
+        label: Project Title
+        type: string
+      - name: repo
+        label: GitHub Repository URL
+        type: string
+      - name: demo
+        label: Live Demo URL
+        type: string
+      - name: preview
+        label: Preview Image
+        type: image
+        options:
+          path: src/img/projects/
+      - name: description
+        label: Description
+        type: text
+      - name: keywords
+        label: Technologies / Tags
+        type: string
+        list: true
   - name: courses
     label: Courses
     path: src/_data/resume/courses.json
     type: file
+    list: true
     fields:
       - name: courses
         label: Courses
         type: string
-        list: true
+        
   - name: history
     label: Work History
     path: src/_data/resume/history.json
