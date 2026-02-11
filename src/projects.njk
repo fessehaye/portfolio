@@ -28,7 +28,7 @@ layout: layout/default.njk
                         <h1 class="text-2xl font-Mada mb-6">{{ project.title }}</h1>
                         <p class="text-xl mb-4">{{project.description}}</p>
                         <div class="flex">
-                            {% if project.demo %}
+                            {% if project.repo %}
                                 <a class="mr-3 md:mr-8 flex text-md lg:text-xl items-center hover:text-indigo-600 font-Mada uppercase" href="{{project.repo}}" target="_blank" rel="noopener noreferrer">
                                     <svg
                                     class="w-6 h-6 mr-1" fill="currentColor"
