@@ -4,22 +4,15 @@
     "demo": "https://www.vdldodgeball.ca/",
     "preview": "/img/projects/vdl.png",
     "description": "Helped build and deploy the first new VDL site in almost 10 years!",
-    "keywords": [
-      "Wordpress"
-    ]
+    "keywords": ["Wordpress"]
   },
   {
     "title": "Hot Chocolate Festival 2025/2026",
     "repo": "https://github.com/fessehaye/hot-choco-2025",
     "demo": "https://hot-choco-2026.vercel.app",
-    "preview": "/img/projects/Screenshot 2026-02-11 at 2.05.23 AM.png",
+    "preview": "/img/projects/hc2026.png",
     "description": "Helps you find the closest hot chocolate relative to your location using PostGIS and supabase.",
-    "keywords": [
-      "Remix",
-      "Tailwind",
-      "Supabase",
-      "Mantine"
-    ]
+    "keywords": ["Remix", "Tailwind", "Supabase", "Mantine"]
   },
   {
     "title": "Hot Chocolate Festival 2024",
@@ -27,10 +20,7 @@
     "demo": "https://hot-choco-passport.netlify.app/",
     "preview": "/img/projects/HotChocolatePassport.png",
     "description": "Bookmark, Search and record the drinks you are trying for the 2024 greater vancouver hot chocolate festival.",
-    "keywords": [
-      "Astro",
-      "React"
-    ]
+    "keywords": ["Astro", "React"]
   },
   {
     "title": "Bye Ariel",
@@ -38,10 +28,7 @@
     "demo": "https://bye-ariel.netlify.app/",
     "preview": "/img/projects/goodbye.png",
     "description": "I had a few days to make a guestbook for our departing co-worker. It is inspired by the Pokemon Diamond ending credits (her favourite pokemon game)",
-    "keywords": [
-      "Astro",
-      "Greensock"
-    ]
+    "keywords": ["Astro", "Greensock"]
   },
   {
     "title": "Hot Chocolate Festival 2023",
@@ -49,10 +36,7 @@
     "demo": "https://hot-choco-adventure.netlify.app/",
     "preview": "/img/projects/hotAdventure.png",
     "description": "Made a site to demo the hot chocolates I tried during the festival. Had fun with scrolltrigger animations!",
-    "keywords": [
-      "Astro",
-      "Greensock"
-    ]
+    "keywords": ["Astro", "Greensock"]
   },
   {
     "title": "BC Smash Events",
@@ -60,11 +44,7 @@
     "demo": "https://bcsmash.ca/",
     "preview": "/img/projects/bc.png",
     "description": "View the latest BC smash events for Melee, Ultimate and P+",
-    "keywords": [
-      "Astro",
-      "Tailwind",
-      "PWA"
-    ]
+    "keywords": ["Astro", "Tailwind", "PWA"]
   },
   {
     "title": "New Personal Website!",
@@ -72,12 +52,7 @@
     "demo": "https://fessehaye.netlify.app/",
     "preview": "/img/current.png",
     "description": "The site that you are looking at!",
-    "keywords": [
-      "Eleventy",
-      "Greensock",
-      "Tailwind",
-      "PWA"
-    ]
+    "keywords": ["Eleventy", "Greensock", "Tailwind", "PWA"]
   },
   {
     "title": "Smash Timer",
@@ -85,20 +60,14 @@
     "demo": "https://smash-timer.netlify.app",
     "preview": "/img/projects/timer.png",
     "description": "Metronome app to figure out the timing of inputs in fighting games.",
-    "keywords": [
-      "Web Audio",
-      "React",
-      "Typescript"
-    ]
+    "keywords": ["Web Audio", "React", "Typescript"]
   },
   {
     "title": "Results Thread Generator",
     "repo": "https://github.com/fessehaye/Results-thread-figma",
     "preview": "/img/projects/results.png",
     "description": "Figma file to generate result graphics for weekly tournament results",
-    "keywords": [
-      "Figma"
-    ]
+    "keywords": ["Figma"]
   },
   {
     "title": "Slp-recorder",
@@ -134,11 +103,7 @@
     "demo": "https://abdocs.netlify.app/",
     "preview": "/img/projects/docs.png",
     "description": "Documentation for the Alberta Smash Group",
-    "keywords": [
-      "VuePress",
-      "VueJS",
-      "Netlify CMS"
-    ]
+    "keywords": ["VuePress", "VueJS", "Netlify CMS"]
   },
   {
     "title": "Smash Calendar Extension",
@@ -146,12 +111,7 @@
     "demo": "https://chrome.google.com/webstore/detail/smash-mini-calendar/phgeahccdaffidkpeheameakleoahbji?hl=en",
     "preview": "/img/projects/calendar.jpg",
     "description": "Chrome Extension bookmark smash.gg events for future use",
-    "keywords": [
-      "Chrome Extension",
-      "VueJS",
-      "Bulma",
-      "Rest API"
-    ]
+    "keywords": ["Chrome Extension", "VueJS", "Bulma", "Rest API"]
   },
   {
     "title": "Edmonton Smash Website",
@@ -159,12 +119,7 @@
     "demo": "https://nostalgic-mccarthy-a529a9.netlify.app",
     "preview": "/img/projects/ABSmash.png",
     "description": "Public site for the Edmonton smash group",
-    "keywords": [
-      "React",
-      "Public Site",
-      "Bootstrap",
-      "Airtable"
-    ]
+    "keywords": ["React", "Public Site", "Bootstrap", "Airtable"]
   },
   {
     "title": "Idiosyncrasy",
@@ -172,12 +127,6 @@
     "demo": "http://idiosyncrasy.surge.sh",
     "preview": "/img/projects/idiosyncrasy.png",
     "description": "Web based game for game gallery exhibition.",
-    "keywords": [
-      "SPA",
-      "Game",
-      "Print Media Queries",
-      "KnockoutJS",
-      "ThreeJS"
-    ]
+    "keywords": ["SPA", "Game", "Print Media Queries", "KnockoutJS", "ThreeJS"]
   }
 ]
