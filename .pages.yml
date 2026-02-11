@@ -78,6 +78,10 @@ content:
     path: src/_data/resume/courses.json
     type: file
     list: true
+    fields:
+      - name: name
+        label: Course Name
+        type: string
   - name: history
     label: Work History
     path: src/_data/resume/history.json

@@ -1,23 +1,65 @@
 [
-    "Elementary Calculus I, II, & III",
-    "Intro to Computing Science",
-    "Programming with Data Structures",
-    "Linear Algebra I & II",
-    "Graph Theory",
-    "Practical Programming Methodology",
-    "Algorithms I",
-    "Introduction to Digital Image Processing",
-    "Formal Systems and Logic in Computing Science",
-    " Introduction to File and Database Management",
-    "Introduction to Software Engineering",
-    "Non-Procedural Programming Languages",
-    "Introduction to Numerical Methods",
-    "Intelligent Systems",
-    "Database Management Systems",
-    "Software Process and Product Management",
-    "Web-Based Information Systems",
-    "Machine Learning",
-    "Operating Systems",
-    "Combinatorics",
-    "Experimental Mobile Robotics"
+    {
+        "name": "Elementary Calculus I, II, & III"
+    },
+    {
+        "name": "Intro to Computing Science"
+    },
+    {
+        "name": "Programming with Data Structures"
+    },
+    {
+        "name": "Linear Algebra I & II"
+    },
+    {
+        "name": "Graph Theory"
+    },
+    {
+        "name": "Practical Programming Methodology"
+    },
+    {
+        "name": "Algorithms I"
+    },
+    {
+        "name": "Introduction to Digital Image Processing"
+    },
+    {
+        "name": "Formal Systems and Logic in Computing Science"
+    },
+    {
+        "name": "Introduction to File and Database Management"
+    },
+    {
+        "name": "Introduction to Software Engineering"
+    },
+    {
+        "name": "Non-Procedural Programming Languages"
+    },
+    {
+        "name": "Introduction to Numerical Methods"
+    },
+    {
+        "name": "Intelligent Systems"
+    },
+    {
+        "name": "Database Management Systems"
+    },
+    {
+        "name": "Software Process and Product Management"
+    },
+    {
+        "name": "Web-Based Information Systems"
+    },
+    {
+        "name": "Machine Learning"
+    },
+    {
+        "name": "Operating Systems"
+    },
+    {
+        "name": "Combinatorics"
+    },
+    {
+        "name": "Experimental Mobile Robotics"
+    }
 ]

@@ -105,7 +105,7 @@ layout: layout/default
                 <p class="font-default text-lg mb-6 text-gray-500">Sept 2010 - Sept 2015</p>
                 <div class="flex flex-wrap w-100 justify-start">
                     {% for course in resume.courses %}
-                        <span class="mb-2 mr-4 text-md leading-tight uppercase tracking-wider text-white bg-indigo-600 p-2 rounded-lg shadow-md font-Mada">{{course}}</span>
+                        <span class="mb-2 mr-4 text-md leading-tight uppercase tracking-wider text-white bg-indigo-600 p-2 rounded-lg shadow-md font-Mada">{{course.name}}</span>
                     {% endfor %}
                 </div>
             </article>
