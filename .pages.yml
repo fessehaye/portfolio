@@ -2,32 +2,6 @@
 media:
   input: src/img
   output: /img
-components:
-  project:
-    label: Project
-    type: object
-    fields:
-      - name: title
-        label: Project Title
-        type: string
-      - name: repo
-        label: GitHub Repository URL
-        type: string
-      - name: demo
-        label: Live Demo URL
-        type: string
-      - name: preview
-        label: Preview Image
-        type: image
-        options:
-          path: src/img/projects/
-      - name: description
-        label: Description
-        type: text
-      - name: keywords
-        label: Technologies / Tags
-        type: string
-        list: true
 content:
   - name: site
     label: Site Info
@@ -119,7 +93,7 @@ content:
         pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$
       - name: logo
         label: Logo Image Path
-        type: string
+        type: image
       - name: startDate
         label: Start Date
         type: string
