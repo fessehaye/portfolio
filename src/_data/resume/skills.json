@@ -35,7 +35,8 @@
     "Wagtail CMS",
     "Jest",
     "Jotai",
-    "Vite"
+    "Vite",
+    "Lit/Web Components"
   ],
   "databases": [
     "GraphQL",
