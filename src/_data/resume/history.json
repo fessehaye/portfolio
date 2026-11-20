@@ -1,5 +1,13 @@
 [
   {
+    "company": "Clio",
+    "companySite": "https://www.clio.com/en-ca/",
+    "logo": "/img/Clio_dark.svg",
+    "startDate": "July 2026",
+    "title": "Software Engineer",
+    "description": "Working on the Clio Design System Team"
+  },
+  {
     "company": "Hootsuite",
     "companySite": "https://www.hootsuite.com/",
     "logo": "/img/hootsuite.jpg",
